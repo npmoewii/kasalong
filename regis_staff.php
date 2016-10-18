@@ -8,7 +8,7 @@
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
-    <form action="regis_staff_success.php" method="POST">
+    <form action="php/add_staff.php" method="POST">
         ชื่อ<input type="text" name="name"><br>
         นามสกุล<input type="text" name="surname"><br>
         ชื่อเล่น<input type="text" name="nickname"><br>
