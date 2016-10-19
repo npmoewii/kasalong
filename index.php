@@ -20,7 +20,7 @@
         <li><a href="#">ตารางกิจกรรม</a></li>
         <li><a href="#">ถาม-ตอบ</a></li>
         <li><a href="#">ติดต่อสอบถาม</a></li>
-        <li class="right"><a href="#">Login</a></li>
+        <li class="right"><a href="login.php">Login</a></li>
       </ul>
     </div>
   </nav>
