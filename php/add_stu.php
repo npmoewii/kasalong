@@ -10,7 +10,7 @@ if(isset($_POST['btn-submit'])){
     else{
         $ent = "";
         foreach($_POST['ent'] as $value){
-            $ent += $value+"|";
+            $ent .= $value."|";
         }
         $sql = "insert into info_student
         (sname,ssurname,nickname,birth,nationid,region,address,email,facebook,clas,school,program,disease,size,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1) values ('".

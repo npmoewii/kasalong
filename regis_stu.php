@@ -7,6 +7,7 @@
 <body>
     <form action="php/add_stu.php" method="post">
         ข้อมูลส่วนตัว <br>
+        อัพโหลดรูปส่วนตัว <input type="file" name="img_prof" required><br>
         ชื่อ <input type="text" name="sname" required><br>
         นามสกุล <input type="text" name="ssurname" required><br>
         ชื่อเล่น <input type="text" name="nickname" required><br>

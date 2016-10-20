@@ -9,6 +9,7 @@
 </head>
 <body>
     <form action="php/add_staff.php" method="POST">
+        อัพโหลดรูปโปรไฟล์ <input type="file" name="img_prof" required><br>
         ชื่อ<input type="text" name="name"><br>
         นามสกุล<input type="text" name="surname"><br>
         ชื่อเล่น<input type="text" name="nickname"><br>
