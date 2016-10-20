@@ -15,6 +15,6 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
 </head>
 <body>
   <h1>Admin</h1>
-  <h2>Show staff information <a href="aviewall.php">[Back]</a></h2>
+  <h2>Show student information / Check student <a href="aviewall.php">[Back]</a></h2>
 </body>
 </html>

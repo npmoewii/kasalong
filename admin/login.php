@@ -1,9 +1,13 @@
 <?php
 session_start();
-if (isset($_POST['request']) and ($_POST['request'] == "admin-login")) {
-  $pwd = $_POST['pwd'];
+if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
+  if (isset($_SESSION['admin'])) {
+    unset($_SESSION['admin']);
+  }
+  $pwd = addslashes($_POST['pwd']);
   if ($pwd == "kasashort") {
-    $msg =  "Correct password";
+    $_SESSION['admin'] ="pen_pineapple_apple_pen";
+    header("Location: aviewall.php");
   }
   else {
     $msg =  "Wrong Password";
