@@ -29,7 +29,7 @@
       <div class="jumbotext">Kasalong Camp</div>
       <hr>
     </div>
-    <a href="login.php">Register for Student</a>
+    <a href="regis_stu.php">Register for Student</a>
     <a href="regis_staff.php">Register for Staff</a>
   </div>
   <script src="js/main.js"></script>
