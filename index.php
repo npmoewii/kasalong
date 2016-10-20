@@ -30,7 +30,7 @@
       <hr>
     </div>
     <a href="login.php">Register for Student</a>
-    <a id="staff" href="regis_staff.php">Register for Staff</a>
+    <a href="regis_staff.php">Register for Staff</a>
   </div>
   <script src="js/main.js"></script>
 </body>
