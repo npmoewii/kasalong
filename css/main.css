@@ -78,26 +78,8 @@ nav {
 .main {
   width: 980px;
   margin: auto;
-  text-align: center;
 }
-.main a{
-  box-sizing: border-box;
-  color: #ccc;
-  text-decoration: none;
-  background: #333;
-  padding: 15px 17px;
-  border-radius: 5px;
-  margin: 20px 10px;
-  display: inline-block;
-}
-.main a:hover {
-  background: #444;
-  color: #fff;
-}
-#staff{
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-}
+
 /* Responsive */
 @media only screen and (max-width:980px) {
   .navbar {
