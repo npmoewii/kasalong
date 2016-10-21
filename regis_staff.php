@@ -8,21 +8,7 @@
   <link rel="stylesheet" href="css/regis_staff.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
-<<<<<<< HEAD
 <body>
-    <form action="php/add_staff.php" method="POST" enctype="multipart/form-data">
-        อัพโหลดรูปโปรไฟล์ <input type="file" name="img_prof" accept=".jpg" required><br>
-        ชื่อ<input type="text" name="name"><br>
-        นามสกุล<input type="text" name="surname"><br>
-        ชื่อเล่น<input type="text" name="nickname"><br>
-        รหัสประจำตัวนิสิต <input type="text" name="idstu"><br>
-        คณะ
-        <select name="faculty">
-            <option value="Engineering">วิศวกรรมศาสตร์</option>
-        </select>
-        ชั้นปี
-        <select name="years">
-=======
     <nav>
         <div class="navbar">
           <div class="heading">
@@ -30,26 +16,29 @@
           </div>
     </nav>
     <div class="navbar"></div>
-    <form action="php/add_staff.php" method="POST">
+    <form action="php/add_staff.php" method="POST" enctype="multipart/form-data">
         <p id="head">staff register</p>
         <!--<img alt="profile picture" src=""><br/> -->
-        <input type="file" name="img_prof" required id="pic">        
+        Profile image
+        <input type="file" name="img_prof" required accept=".jpg" id="pic">
+        ชื่อ
         <input type="text" name="name" placeholder="ชื่อ">
+        นามสกุล
         <input type="text" name="surname" placeholder="นามสกุล" >
-        <input type="text" name="nickname" placeholder="ชื่อเล่น">        
+        ชื่อเล่น
+        <input type="text" name="nickname" placeholder="ชื่อเล่น">
+        รหัสประจำตัวนิสิต
         <input type="text" name="idstu" placeholder="รหัสประจำตัวนิสิต">
-        <select name="faculty"> 
-            <option value="Engineering">วิศวกรรมศาสตร์</option>
-        </select>
-        <select name="year">
->>>>>>> origin/master
+        คณะ
+        <input type="text" name="faculty" placeholder="คณะ">
+        ชั้นปีที่
+        <select name="years">
             <option value="1">ปี 1 </option>
             <option value="2">ปี 2 </option>
             <option value="3">ปี 3 </option>
             <option value="4">ปี 4 </option>
-<<<<<<< HEAD
         </select><br>
-        อาศัยอยู่ที่เชียงราย
+        อาศัยอยู่ที่จังหวัดเชียงราย
         <select name="livechr" required>
             <option value="true">ใช่</option>
             <option value="false">ไม่ใช่</option>
@@ -71,19 +60,14 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
-        </select><br>
-        Contact<br>
-        เบอร์โทรศัพท์มือถือ <input type="text" name="phone"><br>
-        Line <input type="text" name="lineid"><br>
-        Facebook <input type="text" name="facebook"><br>
-        <button type="submit" name="btn-submit">Submit</button>
-=======
         </select>
+        เบอร์โทรศัพท์
         <input type="text" name="phone" placeholder="เบอร์โทรศัพท์">
+        Line
         <input type="text" name="lineid" placeholder="Line">
+        Facebook
         <input type="text" name="facebook" placeholder="facebook"><br/>
-        <button type="submit" name="btn-submit">Submit</button>              
->>>>>>> origin/master
+        <button type="submit" name="btn-submit">Submit</button>
     </form>
 </body>
 </html>
