@@ -22,7 +22,7 @@ $studata = $conn->query($sql_studata);
     <h1>Kasalong Admin</h1>
     <h2>Show student information / Check student</h2>
     <p>อัพเดตทุกวินาที / อัพเดตเฉพาะข้อมูลจาก database / Database จะแสดงเหนือคำว่า "ตัวอย่าง"</p>
-    <table>
+    <table border="0" cellspacing="0" cellpadding="0">
       <tr>
         <th>ชื่อ-นามสกุล</th>
         <th>ชื่อเล่น</th>
@@ -46,7 +46,7 @@ $studata = $conn->query($sql_studata);
               echo "<div class=\"tst tgreen\">ผ่าน</div>";
             }
             ?></td>
-          <td><a href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">[Check]</a></td>
+          <td align="center"><a class="btncheck" href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">Check</a></td>
         </tr>
       <?php } ?>
       <tr>
@@ -55,49 +55,49 @@ $studata = $conn->query($sql_studata);
         <td>นาย สมศักดิ์ รักเรียน</td>
         <td>ศักดิ์</td>
         <td align="center"><div class="tst tred">ไม่ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นส. สมศรี หนีเรียน</td>
         <td>ศรี</td>
         <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมชาย ไม่เรียน</td>
         <td>ชาย</td>
         <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมโภชณ์ โดดเรียน</td>
         <td>โภช</td>
         <td align="center"><div class="tst tred">ไม่ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมหญิง วิ่งเรียน</td>
         <td>หญิง</td>
         <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นส. สมทรง คงเรียน</td>
         <td>ทรง</td>
         <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td>[Check]</td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมปอง ลองเรียน</td>
         <td>ปอง</td>
         <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td><a href="check_stu1.php">[Check]</a></td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมหมาย ใฝ่เรียน</td>
         <td>หมาย</td>
         <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td><a href="check_stu1.php">[Check]</a></td>
+        <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
     </table>
   </div>

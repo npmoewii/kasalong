@@ -2,7 +2,7 @@
 body {
   font-family: "supermarket";
   margin: 0px;
-  /*background-color: #bed8ef;*/
+  background-color: #bed8ef;
 }
 a:link {
   color: #03f;
@@ -17,12 +17,13 @@ a:visited {
 /* Navigation Bar */
 nav {
   width: 100%;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.90);
   color: #ccc;
   overflow: auto;
   position: fixed;
   left: 0px;
   top: 0px;
+  z-index: 1;
 }
 .navbar {
   width: 980px;
@@ -132,4 +133,10 @@ footer {
   background: #333;
   color: #ccc;
   text-align: center;
+}
+.content{
+  position: relative;
+  min-height: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
 }

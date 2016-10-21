@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/home.css" type="text/css">
+  <link rel="stylesheet" href="css/timeline.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
@@ -38,11 +39,49 @@
     <div class="jumbo">
       <div class="jumbohead">รายละเอียดค่าย</div>
     </div>
+    <div class="content">
+        <h1 style="text-align:center;">Kasalong camp</h1>
+        <h3 style="text-align:center;">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย</h3>
+    </div>
+
   </section>
   <section id="section3">
     <div class="jumbo">
       <div class="jumbohead">กำหนดการ</div>
     </div>
+    <ul class="timeline">
+
+    <!-- Item 1 -->
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">1-30 พฤศจิกายน 2559</span>
+        </div>
+        <div class="desc">เปิดรับสมัครเข้าร่วมโครงการ</div>
+      </div>
+    </li>
+  
+    <!-- Item 2 -->
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span class="flag">10 ธันวาคม 2559</span>
+        </div>
+        <div class="desc">ประกาศรายชื่อผู้มีสิทธิ์เข้าร่วมโครงการ</div>
+      </div>
+    </li>
+
+    <!-- Item 3 -->
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="flag">4-6 มกราคม 2560</span>
+        </div>
+        <div class="desc">ระยะเวลาดำเนินค่าย KASALONG CAMP</div>
+      </div>
+    </li>
+  
+</ul>
   </section>
   <section id="section4">
     <div class="jumbo">
