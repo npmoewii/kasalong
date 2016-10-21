@@ -8,6 +8,6 @@
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
-    <?php echo $result; ?>
+    <?php echo $_GET['result']; ?>
 </body>
 </html>
