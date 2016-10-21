@@ -13,7 +13,7 @@ if(isset($_POST['btn-submit'])){
             $ent .= $value."|";
         }
         $sql = "insert into info_student
-        (sname,ssurname,nickname,birth,nationid,region,address,email,facebook,clas,school,program,disease,size,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1) values ('".
+        (sname,ssurname,nickname,birth,nationid,religion,address,email,facebook,clas,school,program,disease,size,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1) values ('".
         $_POST['sname']."','"
         .$_POST['ssurname']."','"
         .$_POST['nickname']."','"
