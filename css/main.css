@@ -1,7 +1,8 @@
 /* Tags */
 body {
+  font-family: "supermarket";
   margin: 0px;
-  background-color: #adf;
+  /*background-color: #bed8ef;*/
 }
 a:link {
   color: #03f;
@@ -107,4 +108,28 @@ nav {
   .navbar .nav {
     display: none;
   }
+}
+section {
+  padding: 50px;
+  height: 100%;
+}
+
+#section1,
+#section5{
+    background:#bed8ef;
+  }
+
+#section2,
+#section4{
+    background:#fffff;
+  }
+
+#section3{
+    background-color: #767070;
+  }
+footer {
+  padding: 10px;
+  background: #333;
+  color: #ccc;
+  text-align: center;
 }

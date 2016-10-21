@@ -3,9 +3,17 @@
   padding: 0px;
 }
 .jumbotext {
-  font-size: 60px;
-  padding: 100px;
+  font-size: 80px;
+  padding: 50px;
   text-align: center;
+}
+.jumbohead {
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+}
+.jumbopadding{
+  padding:50px;
 }
 .jumbo hr {
   border-color: #8cf;
