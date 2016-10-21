@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+}
+nav {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
+.navbar {
+  width: 980px;
+  margin: auto;
+  overflow: auto;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar li {
+  display: inline-block;
+  margin: 0px 0px 0px 5px;
+}
+.navbar a {
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  float: left;
+}
+.navbar a:link {
+  color: #000;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #eee;
+}
+.navbar a:visited {
+  color: #000;
+}
+.navbar a:active {
+  background-color: #0ac;
+  color: #fff;
+  border: 1px solid #0ac;
+}
+.navbar .right {
+  float: right;
+  margin: 0px 5px 0px 0px;
+}
+.main {
+  width: 960px;
+  margin: auto;
+  padding: 0px 10px 0px 10px;
+}
+.tst {
+  width: 110px;
+  height: 20px;
+  margin: 0px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+}
+.tred {
+  background-color: #fcc;
+  color: #f00;
+}
+.tgreen {
+  background-color: #cfc;
+  color: #080;
+}
+.tblue {
+  background-color: #bdf;
+  color: #00f;
+}
+.change {
+  display: inline;
+  cursor: pointer;
+}
+#to1 {
+  color: #f00;
+}
+#to2 {
+  color: #080;
+}
+#st {
+  display: none;
+}
+@media only screen and (max-width:980px) {
+  nav {
+    margin: 10px;
+  }
+  .navbar {
+    width: 100%;
+    margin: 0px;
+  }
+  .main {
+    width: 100%;
+  }
+}

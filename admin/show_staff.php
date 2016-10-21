@@ -14,7 +14,10 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
   <script src="../js/jquery.min.js"></script>
 </head>
 <body>
-  <h1>Admin</h1>
-  <h2>Show staff information <a href="aviewall.php">[Back]</a></h2>
+  <?php include("nav-inc.html"); ?>
+  <div class="main">
+    <h1>Admin</h1>
+    <h2>Show staff information</h2>
+  </div>
 </body>
 </html>

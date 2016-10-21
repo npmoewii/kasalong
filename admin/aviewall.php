@@ -14,14 +14,16 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
   <script src="../js/jquery.min.js"></script>
 </head>
 <body>
-  <h1>Admin</h1>
-  <ul>
-    <li><a href="show_student.php">Show Student Information / Check student</a></li>
-    <li>Show Passed Student (slip not checked)</li>
-    <li>Check slip for Student</li>
-    <li>Show Passed Student (slip checked)</li>
-    <li><a href="show_staff.php">Show Staff Information</a></li>
-  </ul>
-  <a href="logout.php">[Logout]</a>
+  <?php include("nav-inc.html"); ?>
+  <div class="main">
+    <h1>Kasalong Admin</h1>
+    <ul>
+      <li><a href="show_student.php">Show Student Information / Check student</a></li>
+      <li>Show Passed Student (slip not checked)</li>
+      <li>Check slip for Student</li>
+      <li>Show Passed Student (slip checked)</li>
+      <li><a href="show_staff.php">Show Staff Information</a></li>
+    </ul>
+  </div>
 </body>
 </html>
