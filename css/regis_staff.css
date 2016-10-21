@@ -11,7 +11,6 @@
 	position: relative;
 	font-weight: normal;
 	text-transform: uppercase;
-	padding-bottom: 20px;
 	padding-bottom: 30px;
 	font-family: sans-serif;
 }
@@ -20,12 +19,12 @@ form {
 	width: 60%;
 	min-width: 400px;
 	border-radius: 3px;
-	margin: 100px auto;
+	margin: 125px auto;
 	position: relative;
 	padding: 5%;
 	box-sizing: border-box;
 	text-align: left;
-	margin-bottom: 250px;
+	margin-bottom: 230px;
 }
 input, select{
 	padding: 1.5em 2em;
@@ -42,13 +41,14 @@ input, select{
 button {
 	color: #FFF;
 	background-color: #5d9ad3;
-	padding: 0.5em 1em;
+	padding: 0.5em 1.2em;
 	border: 1px solid #5d9ad3;
 	border-radius: 2px;
 	box-sizing: border-box;
 	font-size: 20px;
 	display: block;
-	margin: 45px auto;
+	margin: 18px auto;
+	margin-top: 100px;
 }
 #pic {
 	color: #aaa;

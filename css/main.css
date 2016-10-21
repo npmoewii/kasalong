@@ -1,3 +1,4 @@
+/*use for everypage*/
 /* Tags */
 body {
   font-family: "supermarket";
@@ -23,7 +24,7 @@ nav {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 100;
 }
 .navbar {
   width: 980px;
@@ -110,24 +111,7 @@ nav {
     display: none;
   }
 }
-section {
-  padding: 50px;
-  height: 100%;
-}
 
-#section1,
-#section5{
-    background:#bed8ef;
-  }
-
-#section2,
-#section4{
-    background:#fffff;
-  }
-
-#section3{
-    background-color: #767070;
-  }
 footer {
   padding: 10px;
   background: #333;

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/regis_staff.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
+<body>
     <nav>
         <div class="navbar">
           <div class="heading">
@@ -37,5 +38,6 @@
         <input type="text" name="facebook" placeholder="facebook"><br/>
         <button type="submit" name="btn-submit">Submit</button>              
     </form>
+      <footer>KASALONG CAMP</footer>
 </body>
 </html>
