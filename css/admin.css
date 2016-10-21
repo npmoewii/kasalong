@@ -5,13 +5,6 @@ nav {
   margin: 10px 0px 0px 0px;
   padding: 0px;
 }
-table {
-
-}
-th {
-  border-bottom: 1px solid #ccc;
-  padding: 5px;
-}
 .navbar {
   width: 980px;
   margin: auto;
@@ -25,13 +18,13 @@ th {
 .navbar li {
   display: inline-block;
   margin: 0px 0px 0px 5px;
-  float: left;
 }
 .navbar a {
   display: inline-block;
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px;
+  float: left;
 }
 .navbar a:link {
   color: #000;
@@ -81,44 +74,14 @@ th {
   display: inline;
   cursor: pointer;
 }
+#to1 {
+  color: #f00;
+}
+#to2 {
+  color: #080;
+}
 #st {
   display: none;
-}
-.btncheck, .btnpass, .btnfail {
-  margin: 3px;
-  padding: 4px 5px 4px 5px;
-  border-radius: 4px;
-  display: inline-block;
-  text-decoration: none;
-  border-width: 1px;
-  border-style: solid;
-}
-.btncheck {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
-}
-.btncheck:hover {
-  background-color: #286090;
-  border-color: #204d74;
-}
-.btnpass {
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-}
-.btnpass:hover {
-  background-color: #449d44;
-  border-color: #398439;
-}
-.btnfail {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
-}
-.btnfail:hover {
-  background-color: #c9302c;
-  border-color: #ac2925;
 }
 @media only screen and (max-width:980px) {
   nav {

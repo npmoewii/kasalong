@@ -48,8 +48,8 @@ else {
     <p><?php echo $data['title'].$data['sname']." ".$data['ssurname']." (".$data['nickname'].")"; ?></p>
     <p>สถานะ:
       <div id="statusnow" class="tst <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
-      <div class="change btnpass" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
-      <div class="change btnfail" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>
+      <div class="change" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
+      <div class="change" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>
     </p>
   </div>
   <span id="st" data-id="<?php echo $data['nationid']; ?>"><?php echo $status; ?></span>
