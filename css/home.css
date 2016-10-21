@@ -65,17 +65,16 @@ body{
   color: #444;
 }
 /*index section*/
+section {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
-#section1,
-#section5{
+#section1,#section5{
     background:#bed8ef;
   }
 
-#section2,
-#section4{
+#section2,#section4{
     background:#fffff;
   }
 

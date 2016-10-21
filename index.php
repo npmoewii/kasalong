@@ -11,20 +11,20 @@
 </head>
 <body>
   <nav>
-      <div class="navbar">
-        <div class="heading">
+    <div class="navbar">
+      <div class="heading">
           <div class="title"><a href="#section1">KASALONG</a></div>
           <button type="button" id="navbutton">Menu</button>
-        </div>
-        <ul class="nav">
-          <li><a href="#section2">รายละเอียดค่าย</a></li>
-          <li><a href="#section3">กำหนดการ</a></li>
-          <li><a href="#section4">ถาม-ตอบ</a></li>
-          <li><a href="#section5">ติดต่อสอบถาม</a></li>
-          <li class="right"><a href="login.php">Login</a></li>
-        </ul>
       </div>
-    </nav>
+      <ul class="nav">
+        <li><a href="#section2">รายละเอียดค่าย</a></li>
+        <li><a href="#section3">กำหนดการ</a></li>
+        <li><a href="#section4">ถาม-ตอบ</a></li>
+        <li><a href="#section5">ติดต่อสอบถาม</a></li>
+        <li class="right"><a href="login.php">Login</a></li>
+      </ul>
+    </div>
+  </nav>
   <section id="section1">
     <div class="main" style="margin-top:50px;">
       <div class="jumbo">

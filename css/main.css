@@ -35,6 +35,10 @@ nav {
   padding: 15px;
   float: left;
 }
+.title a{
+  color: #ccc;
+  text-decoration: none;
+}
 .navbar ul {
   margin: 0px;
   padding: 0px;
@@ -47,7 +51,7 @@ nav {
 .navbar ul li:hover {
   background-color: #444;
 }
-.navbar a {
+.nav a {
   padding: 15px;
   height: 20px;
   margin: 0px;
