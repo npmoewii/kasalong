@@ -8,20 +8,19 @@
   <link rel="stylesheet" href="css/home.css" type="text/css">
   <link rel="stylesheet" href="css/timeline.css" type="text/css">
   <script src="js/jquery.min.js"></script>
-  <script src="js/onepage.js"></script>
 </head>
 <body>
   <nav>
     <div class="navbar">
       <div class="heading">
-          <div class="title"><a href="#section1" onclick="scroll('section1',0)">KASALONG</a></div>
+          <div class="title page-scroll"><a href="#section1">KASALONG</a></div>
           <button type="button" id="navbutton">Menu</button>
       </div>
       <ul class="nav">
-        <li><a href="#section2" class="page-scroll">รายละเอียดค่าย</a></li>
-        <li><a href="#section3" class="page-scroll">กำหนดการ</a></li>
-        <li><a href="#section4" class="page-scroll">ถาม-ตอบ</a></li>
-        <li><a href="#section5" class="page-scroll">ติดต่อสอบถาม</a></li>
+        <li class="page-scroll"><a href="#section2">รายละเอียดค่าย</a></li>
+        <li class="page-scroll"><a href="#section3">กำหนดการ</a></li>
+        <li class="page-scroll"><a href="#section4">ถาม-ตอบ</a></li>
+        <li class="page-scroll"><a href="#section5">ติดต่อสอบถาม</a></li>
         <li class="right"><a href="login.php">Login</a></li>
       </ul>
     </div>
@@ -36,7 +35,6 @@
         <a id="staff" href="regis_staff.php">Register for Staff</a>
       </div>
     </div>
-  <script src="js/main.js"></script>
   </section>
   <section id="section2">
     <div class="jumbo">
@@ -98,11 +96,6 @@
     </div>
   </section>
   <footer>KASALONG CAMP</footer>
-
-  <script src="js/onepage/jquery.js"></script>
-  <script src="js/onepage/bootstrap.min.js"></script>
-  <script src="js/onepage/jquery.easing.min.js"></script>
-  <script src="js/onepage/scrolling-nav.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

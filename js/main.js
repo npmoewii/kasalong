@@ -1,10 +1,11 @@
 $('#navbutton').click(function() {
   $('.nav').toggle("fast");
 });
-function scroll(id,off=50) {
+$('.page-scroll').click(function() {
+  id = $(this).find('a').attr("href");
   $('body').animate(
     {
-      scrollTop: ($('#'+id).offset().top-off)
+      scrollTop: ($(id).offset().top)
     },'slow'
   );
-}
+});

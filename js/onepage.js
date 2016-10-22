@@ -1,4 +1,4 @@
-$(document).ready(function() {	$('a[href*=#]:not([href=#]):not([href=#show]):not([href=#hide])').click(function() {
+/*$(document).ready(function() {	$('a[href*=#]:not([href=#]):not([href=#show]):not([href=#hide])').click(function() {
 		if ($(window).width() < 768) {
 			$('#mainPage').removeClass('open');
 			setTimeout(function(){$('#mainPage').removeClass('visible');}, 250);
@@ -15,4 +15,4 @@ $(document).ready(function() {	$('a[href*=#]:not([href=#]):not([href=#show]):not
 			}
 		}
 	});
-});
+});*/
