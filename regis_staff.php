@@ -8,17 +8,7 @@
   <link rel="stylesheet" href="css/regis_staff.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
-<<<<<<< HEAD
 <body>
-=======
-<!--<<<<<< HEAD-->
-<body>
-<!--=======
-<<<<<< HEAD>-->
-<body>
-<!--=======
->>>>>>> origin/master-->
->>>>>>> 3f7279f0259714127d9cdf9c363b27eddeffbf33
     <nav>
         <div class="navbar">
           <div class="heading">
