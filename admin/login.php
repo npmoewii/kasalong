@@ -24,8 +24,21 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
   <script src="../js/jquery.min.js"></script>
 </head>
 <body>
-  <center>
-    <h1>Kasalong Admin</h1>
+  <header>
+    <div class="header">
+      <div class="txthead">
+        Kasalong Admin
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="navbar">
+      <ul>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main" style="text-align: center;">
     <form name="loginadmin" action="" method="post">
       <label>
         Password:
@@ -36,6 +49,6 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
     </form>
     (ทดสอบ ใช้ "kasashort")<br>
     <?php if (isset($msg)) { echo $msg; } ?>
-  </center>
+  </div>
 </body>
 </html>
