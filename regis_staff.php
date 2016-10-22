@@ -50,11 +50,11 @@
             <option value="false">ยังไม่จ่าย</option>
         </select>
         <select name="size" required>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
+            <option value="S">size S</option>
+            <option value="M">size M</option>
+            <option value="L">size L</option>
+            <option value="XL">size XL</option>
+            <option value="XXL">size XXL</option>
         </select>
         เบอร์โทรศัพท์
         <input type="text" name="phone" placeholder="เบอร์โทรศัพท์">
