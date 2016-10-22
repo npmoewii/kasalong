@@ -16,7 +16,6 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
 <body>
   <?php include("nav-inc.html"); ?>
   <div class="main">
-    <h1>Kasalong Admin</h1>
     <ul>
       <li><a href="show_student.php">Show Student Information / Check student</a></li>
       <li>Show Passed Student (slip not checked)</li>
