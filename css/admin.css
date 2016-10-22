@@ -1,21 +1,48 @@
 body {
   margin: 0px;
 }
-nav {
+header {
   margin: 10px 0px 0px 0px;
+}
+h1, h2, h3,p {
+  margin: 0px;
+}
+nav {
+  margin: 0px 0px 10px 0px;
   padding: 0px;
 }
 table {
-
+  width: 100%;
+}
+tr:nth-child(2n) {
+  background-color: #eeeeee;
 }
 th {
   border-bottom: 1px solid #ccc;
   padding: 5px;
 }
+td {
+  margin: 0px;
+  padding: 0px 5px 0px 5px;
+}
+.header {
+  width: 980px;
+  margin: auto;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0px 0px;
+}
+.txthead {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
 .navbar {
   width: 980px;
   margin: auto;
   overflow: auto;
+  border: 1px solid #aaa;
+  border-top-width: 0px;
+  border-radius: 0px 0px 5px 5px;
 }
 .navbar ul {
   list-style-type: none;
@@ -24,13 +51,11 @@ th {
 }
 .navbar li {
   display: inline-block;
-  margin: 0px 0px 0px 5px;
+  margin: 0px;
   float: left;
 }
 .navbar a {
   display: inline-block;
-  border: 1px solid #aaa;
-  border-radius: 5px;
   padding: 10px;
 }
 .navbar a:link {
@@ -46,16 +71,20 @@ th {
 .navbar a:active {
   background-color: #0ac;
   color: #fff;
-  border: 1px solid #0ac;
 }
 .navbar .right {
   float: right;
-  margin: 0px 5px 0px 0px;
+  margin: 0px;
+}
+.navbar li::after {
+  border-right: 1px solid #aaa;
 }
 .main {
   width: 960px;
   margin: auto;
-  padding: 0px 10px 0px 10px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 .tst {
   width: 110px;
@@ -63,6 +92,12 @@ th {
   margin: 0px;
   padding: 5px;
   display: inline-block;
+  text-align: center;
+}
+.tstlarge {
+  height: 20px;
+  margin: 0px;
+  padding: 5px;
   text-align: center;
 }
 .tred {
@@ -120,9 +155,31 @@ th {
   background-color: #c9302c;
   border-color: #ac2925;
 }
+#card {
+  margin: 5px 0px 0px 0px;
+  overflow: auto;
+}
+#card #left {
+  width: 200px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  float: left;
+}
+#card #right {
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  float: left;
+}
 @media only screen and (max-width:980px) {
+  header {
+    margin: 10px 10px 0px 10px;
+  }
   nav {
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
+  }
+  .header {
+    width: 100%;
   }
   .navbar {
     width: 100%;

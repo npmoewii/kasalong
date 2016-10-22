@@ -43,14 +43,18 @@ else {
 <body>
   <?php include("nav-inc.html"); ?>
   <div class="main">
-    <h1>Admin</h1>
     <h2>Check student</h2>
-    <p><?php echo $data['title'].$data['sname']." ".$data['ssurname']." (".$data['nickname'].")"; ?></p>
-    <p>สถานะ:
-      <div id="statusnow" class="tst <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
-      <div class="change btnpass" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
-      <div class="change btnfail" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>
-    </p>
+    <div id="card">
+      <div id="left">
+        <img width="200" height="250" style="background-color: #ccc;" alt="" />
+        <div id="statusnow" class="tstlarge <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
+        <div class="change btnpass" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
+        <div class="change btnfail" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>
+      </div>
+      <div id="right">
+        <h3><?php echo $data['title'].$data['sname']." ".$data['ssurname']." (".$data['nickname'].")"; ?></h3>
+      </div>
+    </div>
   </div>
   <span id="st" data-id="<?php echo $data['nationid']; ?>"><?php echo $status; ?></span>
   <script src="../js/admin.js"></script>
