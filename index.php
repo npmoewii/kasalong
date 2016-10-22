@@ -13,14 +13,14 @@
   <nav>
     <div class="navbar">
       <div class="heading">
-          <div class="title"><a href="#section1">KASALONG</a></div>
+          <div class="title"><a href="#section1" onclick="scroll('section1',0)">KASALONG</a></div>
           <button type="button" id="navbutton">Menu</button>
       </div>
       <ul class="nav">
-        <li><a href="#section2">รายละเอียดค่าย</a></li>
-        <li><a href="#section3">กำหนดการ</a></li>
-        <li><a href="#section4">ถาม-ตอบ</a></li>
-        <li><a href="#section5">ติดต่อสอบถาม</a></li>
+        <li><a href="#section2" onclick="scroll('section2')">รายละเอียดค่าย</a></li>
+        <li><a href="#section3" onclick="scroll('section3')">กำหนดการ</a></li>
+        <li><a href="#section4" onclick="scroll('section4')">ถาม-ตอบ</a></li>
+        <li><a href="#section5" onclick="scroll('section5')">ติดต่อสอบถาม</a></li>
         <li class="right"><a href="login.php">Login</a></li>
       </ul>
     </div>
@@ -62,7 +62,7 @@
         <div class="desc">เปิดรับสมัครเข้าร่วมโครงการ</div>
       </div>
     </li>
-  
+
     <!-- Item 2 -->
     <li>
       <div class="direction-l">
@@ -82,7 +82,7 @@
         <div class="desc">ระยะเวลาดำเนินค่าย KASALONG CAMP</div>
       </div>
     </li>
-  
+
 </ul>
   </section>
   <section id="section4">
