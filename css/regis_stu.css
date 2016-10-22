@@ -2,10 +2,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 13px;
 }
 #head {
   font-size: 30px;
-  color:#aaa;
   box-sizing: border-box;
   text-align: center;
   position: relative;
@@ -30,7 +30,6 @@ input, select{
   border: 1px solid #ccc;
   border-radius: 3px;
   box-sizing: border-box;
-  color: #444;
   font-size: 13px;
   margin: 20px auto;
   display: block;
@@ -49,10 +48,6 @@ button {
   margin: 18px auto;
   margin-top: 100px;
 }
-#pic {
-  color: #aaa;
-}
-
 .comment-text-area {
   float: left;
   width:100%;
