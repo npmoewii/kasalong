@@ -20,6 +20,7 @@
         <p id="head">staff register</p>
         <!--<img alt="profile picture" src=""><br/> -->
         <input type="file" name="img_prof" accept=".jpg" required id="pic">
+        ชื่อ
         <input type="text" name="name" placeholder="ชื่อ">
         นามสกุล
         <input type="text" name="surname" placeholder="นามสกุล" >
@@ -41,14 +42,17 @@
             <option value="true">อาศัยอยู่ที่เชียงราย</option>
             <option value="false">ไม่ได้อาศัยอยู่ที่เชียงราย</option>
         </select>
+        การเดินทาง
         <select name="goself" required>
             <option value="true">เดินทางไปเอง</option>
             <option value="false">ไปกับทีมงาน</option>
         </select>
+        การจ่ายเงิน
         <select name="paid" required>
             <option value="true">จ่ายแล้ว</option>
             <option value="false">ยังไม่จ่าย</option>
         </select>
+        ขนาดเสื้อ
         <select name="size" required>
             <option value="S">S</option>
             <option value="M">M</option>
