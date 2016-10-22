@@ -34,6 +34,7 @@
         อาศัยอยู่ที่จังหวัดเชียงราย<select name="livechr" required>
             <option value="true">อาศัยอยู่</option>
             <option value="false">ไม่ได้อยู่</option>
+        </select>
         การเดินทาง<select name="goself" required>
             <option value="true">เดินทางไปเอง</option>
             <option value="false">ไปกับทีมงาน</option>
