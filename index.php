@@ -18,10 +18,10 @@
           <button type="button" id="navbutton">Menu</button>
       </div>
       <ul class="nav">
-        <li><a href="#section2" onclick="scroll('section2')">รายละเอียดค่าย</a></li>
-        <li><a href="#section3" onclick="scroll('section3')">กำหนดการ</a></li>
-        <li><a href="#section4" onclick="scroll('section4')">ถาม-ตอบ</a></li>
-        <li><a href="#section5" onclick="scroll('section5')">ติดต่อสอบถาม</a></li>
+        <li><a href="#section2" class="page-scroll">รายละเอียดค่าย</a></li>
+        <li><a href="#section3" class="page-scroll">กำหนดการ</a></li>
+        <li><a href="#section4" class="page-scroll">ถาม-ตอบ</a></li>
+        <li><a href="#section5" class="page-scroll">ติดต่อสอบถาม</a></li>
         <li class="right"><a href="login.php">Login</a></li>
       </ul>
     </div>
@@ -97,5 +97,11 @@
     </div>
   </section>
   <footer>KASALONG CAMP</footer>
+
+  <script src="js/onepage/jquery.js"></script>
+  <script src="js/onepage/bootstrap.min.js"></script>
+  <script src="js/onepage/jquery.easing.min.js"></script>
+  <script src="js/onepage/scrolling-nav.js"></script>
+
 </body>
 </html>
