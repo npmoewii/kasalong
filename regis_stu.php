@@ -3,21 +3,26 @@
 <head>
     <title>Register 1: Profile</title>
     <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/regis_staff.css" type="text/css">
+  <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
-        ข้อมูลส่วนตัว <br>
+        <p id="head">ข้อมูลส่วนตัว</p>
         อัพโหลดรูปส่วนตัว <input type="file" name="img_prof" accept=".jpg" required><br>
         คำนำหน้าชื่อ
         <select name="title" required>
             <option value="นาย">นาย</option>
             <option value="นางสาว">นางสาว</option>
-        </select><br>
-        ชื่อ <input type="text" name="sname" required><br>
-        นามสกุล <input type="text" name="ssurname" required><br>
-        ชื่อเล่น <input type="text" name="nickname" required><br>
-        วัน/เดือน/ปี เกิด <input type="date" name="birth" required><br>
-        เลขประจำตัวประชาชน <input type="text" name="nationid" required><br>
+        </select>
+        ชื่อ <input type="text" name="sname" required width="50" height="10">
+        นามสกุล <input type="text" name="ssurname" required>
+        ชื่อเล่น <input type="text" name="nickname" required>
+        วัน/เดือน/ปี เกิด <input type="date" name="birth" required>
+        เลขประจำตัวประชาชน <input type="text" name="nationid" required>
         ศาสนา
         <select name="region" required>
             <option value="พุทธ">พุทธ</option>

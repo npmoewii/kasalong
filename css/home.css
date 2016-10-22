@@ -58,17 +58,17 @@ body{
   padding-left: 1.5em;
 }
 /*alphabet color for dark part*/
-#section3, #section5{
-  color: #fff;
-}
+
 .flag{
   color: #444;
 }
 /*index section*/
+
 section {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
+
 }
 #section1,#section5{
     background:#bed8ef;

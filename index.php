@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/home.css" type="text/css">
   <link rel="stylesheet" href="css/timeline.css" type="text/css">
   <script src="js/jquery.min.js"></script>
+  <script src="js/onepage.js"></script>
 </head>
 <body>
   <nav>
