@@ -46,6 +46,7 @@
         <h1 style="text-align:center;">Kasalong camp</h1>
         <h3 style="text-align:center;">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย</h3>
     </div>
+    </div>
 
   </section>
   <section id="section3">
