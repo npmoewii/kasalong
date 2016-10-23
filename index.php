@@ -123,13 +123,13 @@
       <div class="jumbohead">ติดต่อสอบถาม</div>
       <ul class="grid">
         <li>
-        <div>
+        <div class="wide">
           <h3>ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี </h3>
           <p>ชั้น10 อาคารวิศววัฒนะ 126 ถ.ประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140 </p>
         </div>
       </li>
       <li>
-        <div>
+        <div class="wide">
           <h3>โทรศัพท์</h3>
           พี่มิ้นท์ 0584894445 <br>
           พี่อัยย์ 0584894484<br>
@@ -139,13 +139,6 @@
           <h3>อัีเมลล์</h3>
           dfdsggs@fgsg.com
         </div>
-      </li>
-      <li>
-        <div>
-          <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/KMUTTcomcamp" data-width="683" data-height="500" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=478731965498089&amp;container_width=230&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKMUTTcomcamp&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=683"><span style="vertical-align: bottom; width: 674px; height: 500px;"><iframe name="f105d4e54ef574" width="683px" height="500px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?app_id=478731965498089&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FfTmIQU3LxvB.js%3Fversion%3D42%23cb%3Df3bde6d02b9e72c%26domain%3D27.comcamp.in.th%26origin%3Dhttp%253A%252F%252F27.comcamp.in.th%252Ff17a9f67b314fa4%26relation%3Dparent.parent&amp;container_width=230&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKMUTTcomcamp&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=683" style="border: none; visibility: visible; width: 230px; height: 214px;" class=""></iframe></span></div>
-        </div>
-      </li>
-      <li>
       </ul>
     </div>
   </section>
