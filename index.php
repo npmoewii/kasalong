@@ -22,7 +22,7 @@
         <li class="page-scroll"><a href="#section3">กำหนดการ</a></li>
         <li class="page-scroll"><a href="#section4">ถาม-ตอบ</a></li>
         <li class="page-scroll"><a href="#section5">ติดต่อสอบถาม</a></li>
-        <li class="right"><a href="login.php">Login</a></li>
+        <li class="right"><a href="upslip_1.php">Login</a></li>
       </ul>
     </div>
   </nav>
