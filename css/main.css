@@ -115,6 +115,25 @@ nav {
     display: none;
   }
 }
+<<<<<<< HEAD
+#section1,
+#section5{
+    background:#bed8ef;
+    /*box-shadow: #f00;*/
+  }
+
+#section2{
+	background-image: url("section2bg.jpg");
+}
+#section4{
+    background: #ffffff;
+  }
+
+#section3{
+    background-color: #767070;
+  }
+=======
+>>>>>>> origin/master
 
 footer {
   padding: 10px;
@@ -122,9 +141,17 @@ footer {
   color: #ccc;
   text-align: center;
 }
+<<<<<<< HEAD
+/*test*/
+=======
+>>>>>>> origin/master
 .content{
   position: relative;
   min-height: 1px;
   padding-right: 30px;
   padding-left: 30px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
