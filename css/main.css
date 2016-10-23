@@ -4,6 +4,7 @@ body {
   font-family: "supermarket";
   margin: 0px;
   background-color: #bed8ef;
+  height: auto;
 }
 a:link {
   color: #03f;
