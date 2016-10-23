@@ -47,7 +47,7 @@ else {
     <h2>Check student</h2>
     <div id="card">
       <div id="left">
-        <img width="200" height="250" style="background-color: #ccc;" src="<?php echo $data['img_prof']; ?>" alt="" />
+        <img width="200" height="200" style="background-color: #ccc;" src="<?php echo $data['img_prof']; ?>" alt="" />
         <div id="statusnow" class="tstlarge <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
         <div class="change btnpass" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
         <div class="change btnfail" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>

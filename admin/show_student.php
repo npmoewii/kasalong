@@ -6,6 +6,7 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
 include("../php/connect.php");
 $sql_studata = "SELECT `title`, `sname`, `ssurname`, `nickname`, `clas`, `nationid`, `pass` FROM `info_student`";
 $studata = $conn->query($sql_studata);
+$num_studata = $studata->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,7 +48,7 @@ $studata = $conn->query($sql_studata);
               echo "<div class=\"tst tgreen\">ผ่าน</div>";
             }
             ?></td>
-          <td align="center"><a class="btncheck" href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">Check</a></td>
+          <td align="right"><a class="btncheck" href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">Check</a></td>
         </tr>
       <?php } ?>
       <tr>
@@ -109,6 +110,7 @@ $studata = $conn->query($sql_studata);
         <td align="center"><a class="btncheck" href="#">Check</a></td>
       </tr>
     </table>
+    จำนวนนักเรียนทั้งหมด <?php echo $num_studata; ?> คน
   </div>
   <div id="st"></div>
   <script src="../js/adminajax.js"></script>

@@ -25,7 +25,7 @@
         ชื่อเล่น<input type="text" name="nickname" placeholder="ชื่อเล่น">
         รหัสประจำตัวนิสิต<input type="text" name="idstu" placeholder="รหัสประจำตัวนิสิต">
         คณะ<input type="text" name="faculty" placeholder="คณะ">
-        <select name="year">
+        <select name="years">
             <option value="1">ปี 1 </option>
             <option value="2">ปี 2 </option>
             <option value="3">ปี 3 </option>
