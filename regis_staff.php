@@ -16,7 +16,7 @@
           </div>
     </nav>
     <div class="navbar"></div>
-    <form action="php/add_staff.php" method="POST" enctype="multipart/form-data">
+    <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
         <p id="head">staff register</p>
         <!--<img alt="profile picture" src=""><br/> -->
         รูปถ่าย<input type="file" name="img_prof" accept=".jpg" required id="pic">

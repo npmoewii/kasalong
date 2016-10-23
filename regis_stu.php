@@ -10,6 +10,13 @@
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
+    <nav>
+        <div class="navbar">
+          <div class="heading">
+            <div class="title">KASALONG</div>
+          </div>
+    </nav>
+    <div class="navbar"></div>
     <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
         <p id="head">ข้อมูลส่วนตัว</p>
         อัพโหลดรูปส่วนตัว <input type="file" name="img_prof" accept=".jpg" required><br>
@@ -34,6 +41,7 @@
         <div class="comment-text-area">
             <textarea class="textinput" rows="10" cols="60" name="address" required></textarea><br>
         </div>
+        <hr class="hrr" color=#fff >
         เบอร์โทรศัพท์ <input type="tel" name="stel" required><br>
         E-mail <input type="email" name="email"><br>
         Facebook <input type="text" name="facebook"><br>
