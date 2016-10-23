@@ -34,6 +34,7 @@
         <div class="comment-text-area">
             <textarea class="textinput" rows="10" cols="60" name="address" required></textarea><br>
         </div>
+        เบอร์โทรศัพท์ <input type="tel" name="stel" required><br>
         E-mail <input type="email" name="email"><br>
         Facebook <input type="text" name="facebook"><br>
         ระดับชั้น
@@ -83,7 +84,7 @@
         <br>
         คณะที่อยากเข้าศึกษา/มหาวิทยาลัยที่อยากเข้าศึกษา <input type="text" name="future"><br>
 
-        1. สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
+        สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
         <div class="comment-text-area">
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
