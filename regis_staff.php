@@ -52,6 +52,7 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
+        </select>
         การเดินทาง<select name="goself" required>
             <option value="true">เดินทางไปเอง</option>
             <option value="false">ไปกับทีมงาน</option>
