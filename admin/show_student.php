@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
   header("Location: login.php");
 }
 include("../php/connect.php");
-$sql_studata = "SELECT `title`, `sname`, `ssurname`, `nickname`, `clas`, `nationid`, `pass` FROM `info_student`";
+$sql_studata = "SELECT `title`, `sname`, `ssurname`, `nickname`, `clas`, `nationid`, `pass` FROM `info_student` ORDER BY `nationid` ASC";
 $studata = $conn->query($sql_studata);
 $num_studata = $studata->num_rows;
 ?>
@@ -35,7 +35,7 @@ $num_studata = $studata->num_rows;
           <td><?php echo $row_studata['title'].$row_studata['sname']." ".$row_studata['ssurname']; ?></td>
           <td align="center"><?php echo $row_studata['nickname']; ?></td>
           <td align="center">ม.<?php echo $row_studata['clas']; ?></td>
-          <td align="center">
+          <td>
             <?php
             $stu_pass1 = $row_studata['pass'];
             if ($stu_pass1 == 0) {
@@ -57,57 +57,57 @@ $num_studata = $studata->num_rows;
         <td>นาย สมศักดิ์ รักเรียน</td>
         <td align="center">ศักดิ์</td>
         <td align="center">ม.4</td>
-        <td align="center"><div class="tst tred">ไม่ผ่าน</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tred">ไม่ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นส. สมศรี หนีเรียน</td>
         <td align="center">ศรี</td>
         <td align="center">ม.6</td>
-        <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tgreen">ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมชาย ไม่เรียน</td>
         <td align="center">ชาย</td>
         <td align="center">ม.5</td>
-        <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tgreen">ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมโภชณ์ โดดเรียน</td>
         <td align="center">โภช</td>
         <td align="center">ม.5</td>
-        <td align="center"><div class="tst tred">ไม่ผ่าน</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tred">ไม่ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมหญิง วิ่งเรียน</td>
         <td align="center">หญิง</td>
         <td align="center">ม.4</td>
-        <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tgreen">ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นส. สมทรง คงเรียน</td>
         <td align="center">ทรง</td>
         <td align="center">ม.5</td>
-        <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมปอง ลองเรียน</td>
         <td align="center">ปอง</td>
         <td align="center">ม.4</td>
-        <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมหมาย ใฝ่เรียน</td>
         <td align="center">หมาย</td>
         <td align="center">ม.4</td>
-        <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td align="center"><a class="btncheck" href="#">Check</a></td>
+        <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
     </table>
     จำนวนนักเรียนทั้งหมด <?php echo $num_studata; ?> คน
