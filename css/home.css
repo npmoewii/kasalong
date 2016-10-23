@@ -120,13 +120,9 @@ section {
   margin: 0 auto;
 }
 .boxdes {
-<<<<<<< HEAD
-  margin-top: 70px;
-=======
-  margin-top: 20%;
->>>>>>> origin/master
-  margin-left: 50px;
-  margin-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
 	width: 50%;
 }
 .infotxt{
