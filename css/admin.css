@@ -25,15 +25,12 @@ td {
   margin: 0px;
   padding: 0px 5px 0px 5px;
 }
-<<<<<<< HEAD
-=======
 section {
   padding: 0px 10px 10px 10px;
 }
 img {
   border-width: 0px;
 }
->>>>>>> origin/master
 .header {
   width: 980px;
   margin: auto;
@@ -180,8 +177,6 @@ img {
   padding: 0px 0px 0px 10px;
   float: left;
 }
-<<<<<<< HEAD
-=======
 .profimg {
   width: 200px;
   background-color: #ccc;
@@ -190,7 +185,6 @@ img {
   width: 80%;
   background-color: #ccc;
 }
->>>>>>> origin/master
 @media only screen and (max-width:980px) {
   header {
     margin: 10px 10px 0px 10px;
