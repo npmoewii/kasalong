@@ -15,15 +15,15 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
 </head>
 <body>
   <?php include("nav-inc.html"); ?>
-  <div class="main">
-    <h1>Kasalong Admin</h1>
-    <ul>
-      <li><a href="show_student.php">Show Student Information / Check student</a></li>
-      <li>Show Passed Student (slip not checked)</li>
-      <li>Check slip for Student</li>
-      <li>Show Passed Student (slip checked)</li>
-      <li><a href="show_staff.php">Show Staff Information</a></li>
-    </ul>
-  </div>
+  <section>
+    <div class="main">
+      <ul>
+        <li><a href="show_student.php">Show Student Information / Check Student</a></li>
+        <li><a href="passedstulist.php">Show Passed Student / Check Slip</a></li>
+        <li>Show Passed Student (slip checked)</li>
+        <li><a href="show_staff.php">Show Staff Information</a></li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>

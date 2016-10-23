@@ -23,7 +23,7 @@ if(isset($_POST['btn-submit'])){
                         $ent .= $value."|";
                     }
                     $sql = "insert into info_student
-                    (title,sname,ssurname,nickname,birth,nationid,religion,address,email,facebook,clas,school,program,disease,size,img_prof,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1) values ('".
+                    (title,sname,ssurname,nickname,birth,nationid,religion,address,email,facebook,clas,school,program,disease,size,img_prof,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1,pass) values ('".
                     $_POST['title']."','"
                     .$_POST['sname']."','"
                     .$_POST['ssurname']."','"
@@ -53,7 +53,7 @@ if(isset($_POST['btn-submit'])){
                     .$ent."','"
                     .$_POST['future']."','"
                     .$_POST['ans1']."
-                    ')";
+                    ',0)";
                     if($conn->query($sql)){
                         $res = "การสมัครเสร็จสมบูรณ์แล้วค่ะ ติดตามผลการสมัครได้ที่หน้าเว็บไซต์นะคะ แล้วไว้เจอกันที่ค่ายนะคะ :)";
                     }

@@ -58,17 +58,17 @@ body{
   padding-left: 1.5em;
 }
 /*alphabet color for dark part*/
-#section3, #section5{
-  color: #fff;
-}
+
 .flag{
   color: #444;
 }
 /*index section*/
+
 section {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
+
 }
 #section1,#section5{
     background:#bed8ef;
@@ -81,3 +81,31 @@ section {
 #section3{
     background-color: #767070;
   }
+/* info */
+.bluebox {
+	background-color: #fff;
+	width: 750px;
+	height: 400px;
+	margin-left: 3%;
+	border-radius: 20px;
+}
+.infotxt{
+	font-family:"supermarket ";
+	font-size: 20px;
+	color: #000;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.headinfotxt{
+	font-family:"supermarket";
+	font-size: 40px;
+	color: #000;
+	text-align: "center";
+	line-height: 100px;
+}
+.content{
+  position: relative;
+  min-height: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
