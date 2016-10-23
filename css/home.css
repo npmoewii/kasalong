@@ -75,8 +75,8 @@ section {
 
 }
 #section1{
-  background-image: url(eiei.jpg);
-  background-size: 100%;
+  background-image: url(81H.jpg);
+ 
 }
 #section5{
     background:#bed8ef;
@@ -120,11 +120,11 @@ section {
   margin: 0 auto;
 }
 .boxdes {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
+  margin-top: 70px;
+  margin-top: 20%;
+  margin-left: 50px;
+  margin-bottom: 20%;
 	width: 50%;
-  font-size: 18px;
 }
 .infotxt{
 	font-family:"supermarket ";
@@ -143,13 +143,13 @@ section {
 .topic{
   display: inline-block;
   font-family: "supermaket";
-  color: #eee ;
+  color: #eee;
   border: 7px solid currentcolor;
   border-radius: 20px;
   font-size: 100px;
   padding: .5em 1em;
   background: transparent;
-  margin-top: 15%;
+  margin-top: 25%;
   margin-bottom: 2%;
 
     /*background-color: rgba(255, 255, 255, .8);*/ 
