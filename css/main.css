@@ -122,9 +122,11 @@ nav {
     /*box-shadow: #f00;*/
   }
 
-#section2{
+/*#section2{
 	background-image: url("section2bg.jpg");
-}
+}*/
+
+#section2,
 #section4{
     background: #ffffff;
   }
@@ -141,17 +143,4 @@ footer {
   color: #ccc;
   text-align: center;
 }
-<<<<<<< HEAD
-/*test*/
-=======
->>>>>>> origin/master
-.content{
-  position: relative;
-  min-height: 1px;
-  padding-right: 30px;
-  padding-left: 30px;
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> origin/master
+

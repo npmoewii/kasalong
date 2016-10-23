@@ -23,7 +23,7 @@ if(isset($_POST['btn-submit'])){
                         $ent .= $value."|";
                     }
                     $sql = "insert into info_student
-                    (title,sname,ssurname,nickname,birth,nationid,religion,address,email,facebook,clas,school,program,disease,size,img_prof,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1,pass) values ('".
+                    (title,sname,ssurname,nickname,birth,nationid,religion,address,phone,email,facebook,clas,school,program,disease,size,img_prof,pname,pphone,fname,fphone,mname,mphone,went,gpax,gpa,job,ent,future,ans1,pass) values ('".
                     $_POST['title']."','"
                     .$_POST['sname']."','"
                     .$_POST['ssurname']."','"
@@ -32,6 +32,7 @@ if(isset($_POST['btn-submit'])){
                     .$_POST['nationid']."','"
                     .$_POST['region']."','"
                     .$_POST['address']."','"
+                    .$_POST['stel']."','"
                     .$_POST['email']."','"
                     .$_POST['facebook']."','"
                     .$_POST['clas']."','"

@@ -19,32 +19,6 @@ $num_staffdata = $staffdata->num_rows;
 </head>
 <body>
   <?php include("nav-inc.html"); ?>
-<<<<<<< HEAD
-  <div class="main">
-    <h2>Staff List</h2>
-    <table border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <th>ชื่อ-นามสกุล</th>
-        <th>ชื่อเล่น</th>
-        <th>คณะ</th>
-        <th>ชั้นปี</th>
-        <th width="50">&nbsp;</th>
-      </tr>
-      <?php while ($row_staffdata = $staffdata->fetch_array()) { ?>
-      <tr>
-        <td><?php echo $row_staffdata['staffname']." ".$row_staffdata['staffsurname']; ?></td>
-        <td align="center"><?php echo $row_staffdata['nickname']; ?></td>
-        <td align="center"><?php echo $row_staffdata['faculty']; ?></td>
-        <td align="center"><?php echo $row_staffdata['years'] ?></td>
-        <td align="right">
-          <a class="btncheck" href="check_staff.php?id=<?php echo $row_staffdata['idstu']; ?>">Show</a>
-        </td>
-      </tr>
-      <?php } ?>
-    </table>
-    จำนวนผู้สมัครทั้งหมด <?php echo $num_staffdata; ?> คน
-  </div>
-=======
   <section>
     <div class="main">
       <h2>Staff List</h2>
@@ -71,6 +45,5 @@ $num_staffdata = $staffdata->num_rows;
       จำนวนผู้สมัครทั้งหมด <?php echo $num_staffdata; ?> คน
     </div>
   </section>
->>>>>>> origin/master
 </body>
 </html>

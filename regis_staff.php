@@ -12,12 +12,11 @@
     <nav>
         <div class="navbar">
           <div class="heading">
-            <div class="title">KASALONG</div>
+            <div class="title"><a href="index.php">KASALONG</a></div>
           </div>
     </nav>
     <div class="navbar"></div>
     <form action="php/add_staff.php" method="POST" enctype="multipart/form-data">
-    <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
         <p id="head">staff register</p>
         <!--<img alt="profile picture" src=""><br/> -->
         รูปถ่าย<input type="file" name="img_prof" accept=".jpg" required id="pic">
@@ -36,6 +35,23 @@
             <option value="true">อาศัยอยู่</option>
             <option value="false">ไม่ได้อยู่</option>
         </select>
+        การเดินทาง
+        <select name="goself" required>
+            <option value="true">เดินทางไปเอง</option>
+            <option value="false">ไปกับทีมงาน</option>
+        </select>
+        การจ่ายเงิน
+        <select name="paid" required>
+            <option value="true">จ่ายแล้ว</option>
+            <option value="false">ยังไม่จ่าย</option>
+        </select>
+        ขนาดเสื้อ
+        <select name="size" required>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
         การเดินทาง<select name="goself" required>
             <option value="true">เดินทางไปเอง</option>
             <option value="false">ไปกับทีมงาน</option>
@@ -43,13 +59,6 @@
         การจ่ายเงิน<select name="paid" required>
             <option value="true">จ่ายแล้ว</option>
             <option value="false">ยังไม่จ่าย</option>
-        </select>
-        ไซส์เสื้อ<select name="size" required>
-            <option value="S">size S</option>
-            <option value="M">size M</option>
-            <option value="L">size L</option>
-            <option value="XL">size XL</option>
-            <option value="XXL">size XXL</option>
         </select>
         เบอร์โทรศัพท์<input type="text" name="phone" placeholder="เบอร์โทรศัพท์">
         Line<input type="text" name="lineid" placeholder="Line">

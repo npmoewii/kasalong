@@ -29,48 +29,6 @@ else {
 </head>
 <body>
   <?php include("nav-inc.html"); ?>
-<<<<<<< HEAD
-  <div class="main">
-    <h2>Show Staff Information</h2>
-    <div id="card">
-      <div id="left">
-        <img width="200" height="200" style="background-color: #ccc;" src="<?php echo $data['img_prof']; ?>" alt="" />
-      </div>
-      <div id="right">
-        <h3><?php echo $data['staffname']." ".$data['staffsurname']." (".$data['nickname'].")"; ?></h3>
-        <p>คณะ: <?php echo $data['faculty']; ?></p>
-        <p>ชั้นปี: <?php echo $data['years']; ?></p>
-        <p>
-          อาศัยอยู่ที่จังหวัดเชียงราย?:
-          <?php
-          if ($data['livechr'] == 0) echo "ไม่";
-          else if ($data['livechr'] == 1) echo "ใช่";
-          ?>
-        </p>
-        <?php if ($data['goself'] == 0) { ?>
-        <p>การเดินทาง: ไปกับทีมงาน</p>
-        <p>
-          การจ่ายเงิน:
-          <?php
-          if ($data['paid'] == 0) {
-            echo "ยังไม่จ่าย";
-          }
-          else if ($data['paid'] == 1) {
-            echo "จ่ายแล้ว";
-          }
-          ?>
-        </p>
-        <?php } else if ($data['goself'] == 1) { ?>
-        <p>การเดินทาง: ไปเอง</p>
-        <?php } ?>
-        <p>ไซส์เสื้อ: <?php echo $data['size']; ?></p>
-        <p>เบอร์โทรศัพท์: <?php echo $data['phone']; ?></p>
-        <p>Line ID: <?php echo $data['lineid']; ?></p>
-        <p>Facebook: <?php echo $data['facebook']; ?></p>
-      </div>
-    </div>
-  </div>
-=======
   <section>
     <div class="main">
       <h2>Show Staff Information</h2>
