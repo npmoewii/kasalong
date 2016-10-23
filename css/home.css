@@ -76,7 +76,7 @@ section {
 }
 #section1{
   background-image: url(81H.jpg);
- 
+  background-size: 100%;
 }
 #section5{
     background:#bed8ef;
@@ -152,7 +152,7 @@ section {
   font-size: 100px;
   padding: .5em 1em;
   background: transparent;
-  margin-top: 25%;
+  margin-top: 15%;
   margin-bottom: 2%;
 
     /*background-color: rgba(255, 255, 255, .8);*/ 
