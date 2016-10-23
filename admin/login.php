@@ -38,20 +38,6 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
       </ul>
     </div>
   </nav>
-<<<<<<< HEAD
-  <div class="main" style="text-align: center;">
-    <form name="loginadmin" action="" method="post">
-      <label>
-        Password:
-        <input type="password" name="pwd" placeholder="Enter Password">
-      </label>
-      <input type="hidden" name="request" value="admin-login">
-      <input type="submit" name="btnSubmit" value="Login">
-    </form>
-    (ทดสอบ ใช้ "kasashort")<br>
-    <?php if (isset($msg)) { echo $msg; } ?>
-  </div>
-=======
   <section>
     <div class="main" style="text-align: center;">
       <form name="loginadmin" action="" method="post">
@@ -66,6 +52,5 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
       <?php if (isset($msg)) { echo $msg; } ?>
     </div>
   </section>
->>>>>>> origin/master
 </body>
 </html>
