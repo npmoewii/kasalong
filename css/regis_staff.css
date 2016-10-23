@@ -1,0 +1,50 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  color:#666;
+}
+#head {
+	font-size: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+form {
+	background-color: #FFF;
+	width: 60%;
+	min-width: 400px;
+	border-radius: 3px;
+	margin: 125px auto;
+	position: relative;
+	padding: 5%;
+	box-sizing: border-box;
+	text-align: left;
+	margin-bottom: 230px;
+}
+input, select{
+	padding: 1.5em 2em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 13px;
+	margin: 20px auto;
+	display: block;
+	clear: none;
+	width: 100%;
+}
+button {
+	color: #FFF;
+	background-color: #5d9ad3;
+	padding: 0.5em 1.2em;
+	border: 1px solid #5d9ad3;
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-size: 20px;
+	display: block;
+	margin: 18px auto;
+	margin-top: 100px;
+}

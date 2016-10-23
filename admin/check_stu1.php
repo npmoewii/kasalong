@@ -28,6 +28,7 @@ else {
       $class_status = "tgreen";
       $text_status = "ผ่าน";
     }
+    include("../php/mainfunction.php");
   }
 }
 ?>
@@ -43,14 +44,61 @@ else {
 <body>
   <?php include("nav-inc.html"); ?>
   <div class="main">
-    <h1>Admin</h1>
     <h2>Check student</h2>
-    <p><?php echo $data['title'].$data['sname']." ".$data['ssurname']." (".$data['nickname'].")"; ?></p>
-    <p>สถานะ:
-      <div id="statusnow" class="tst <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
-      <div class="change" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
-      <div class="change" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>
-    </p>
+    <div id="card">
+      <div id="left">
+        <img width="200" height="200" style="background-color: #ccc;" src="<?php echo $data['img_prof']; ?>" alt="" />
+        <div id="statusnow" class="tstlarge <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
+        <div class="change btnpass" id="to2" data-id="<?php echo $data['nationid']; ?>" data-to="2">ผ่าน</div>
+        <div class="change btnfail" id="to1" data-id="<?php echo $data['nationid']; ?>" data-to="1">ไม่ผ่าน</div>
+      </div>
+      <div id="right">
+        <h3><?php echo $data['title'].$data['sname']." ".$data['ssurname']." (".$data['nickname'].")"; ?></h3>
+        <h4>ข้อมูลส่วนตัว</h4>
+        <p>วันเกิด: <?php echo convdate($data['birth']); ?></p>
+        <p>ศาสนา: <?php echo $data['religion']; ?></p>
+        <p>ที่อยู่: <?php echo $data['address']; ?></p>
+        <p>อีเมล: <?php echo $data['email']; ?></p>
+        <p>Facebook: <?php echo $data['facebook']; ?></p>
+        <p>ชั้น: ม.<?php echo $data['clas']; ?></p>
+        <p>โรงเรียน: <?php echo $data['school']; ?></p>
+        <p>สายการเรียน: <?php echo $data['program']; ?></p>
+        <p>โรคประจำตัว: <?php if (trim($data['disease'], " ") != "") echo $data['disease']; else echo "-"; ?></p>
+        <p>ไซส์เสื้อ: <?php echo $data['size']; ?></p>
+        <hr>
+        <h4>ข้อมูลผู้ปกครอง</h4>
+        <p>
+          ชื่อผู้ปกครอง:
+          <?php echo $data['pname']; ?>
+          เบอร์โทรศัพท์:
+          <?php echo $data['pphone']; ?>
+        </p>
+        <p>
+          ชื่อบิดา:
+          <?php echo $data['fname']; ?>
+          เบอร์โทรศัพท์:
+          <?php echo $data['fphone']; ?>
+        </p>
+        <p>
+          ชื่อมารดา:
+          <?php echo $data['mname']; ?>
+          เบอร์โทรศัพท์:
+          <?php echo $data['mphone']; ?>
+        </p>
+        <hr>
+        <h4>ข้อมูลอื่นๆ</h4>
+        <p>เคยเข้าค่ายกาสะลองหรือไม่: <?php if ($data['went'] == 0) echo "ไม่"; ?>เคย</p>
+        <p>เกรดเฉลี่ยรวม: <?php echo $data['gpax']; ?></p>
+        <p>เกรดเฉลี่ยเทอมล่าสุด: <?php echo $data['gpa']; ?></p>
+        <p>อาชีพที่อยากทำในอนาคต: <?php echo $data['job']; ?></p>
+        <p>ความสนใจในเนื้อหา: <?php echo $data['ent']; ?></p>
+        <p>คณะ/มหาวิทยาลัยที่อยากเข้า: <?php echo $data['future']; ?></p>
+        <hr>
+        <h4>คำถาม</h4>
+        <p>1. สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ</p>
+        <p><?php echo $data['ans1']; ?></p>
+      </div>
+    </div>
   </div>
   <span id="st" data-id="<?php echo $data['nationid']; ?>"><?php echo $status; ?></span>
   <script src="../js/admin.js"></script>

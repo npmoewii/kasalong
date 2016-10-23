@@ -4,8 +4,9 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
   header("Location: login.php");
 }
 include("../php/connect.php");
-$sql_studata = "SELECT `title`, `sname`, `ssurname`, `nickname`, `nationid`, `pass` FROM `info_student`";
+$sql_studata = "SELECT `title`, `sname`, `ssurname`, `nickname`, `clas`, `nationid`, `pass` FROM `info_student` ORDER BY `nationid` ASC";
 $studata = $conn->query($sql_studata);
+$num_studata = $studata->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,21 +20,22 @@ $studata = $conn->query($sql_studata);
 <body onload="updateall()">
   <?php include("nav-inc.html"); ?>
   <div class="main">
-    <h1>Kasalong Admin</h1>
     <h2>Show student information / Check student</h2>
     <p>อัพเดตทุกวินาที / อัพเดตเฉพาะข้อมูลจาก database / Database จะแสดงเหนือคำว่า "ตัวอย่าง"</p>
-    <table>
+    <table border="0" cellspacing="0" cellpadding="0">
       <tr>
         <th>ชื่อ-นามสกุล</th>
         <th>ชื่อเล่น</th>
-        <th>สถานะ</th>
-        <th>ตรวจสอบ</th>
+        <th>ชั้น</th>
+        <th width="100">สถานะ</th>
+        <th width="50">&nbsp;</th>
       </tr>
       <?php while ($row_studata = $studata->fetch_array()) { ?>
         <tr class="eachrow" data-id="<?php echo $row_studata['nationid']; ?>">
           <td><?php echo $row_studata['title'].$row_studata['sname']." ".$row_studata['ssurname']; ?></td>
-          <td><?php echo $row_studata['nickname']; ?></td>
-          <td align="center">
+          <td align="center"><?php echo $row_studata['nickname']; ?></td>
+          <td align="center">ม.<?php echo $row_studata['clas']; ?></td>
+          <td>
             <?php
             $stu_pass1 = $row_studata['pass'];
             if ($stu_pass1 == 0) {
@@ -46,60 +48,69 @@ $studata = $conn->query($sql_studata);
               echo "<div class=\"tst tgreen\">ผ่าน</div>";
             }
             ?></td>
-          <td><a href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">[Check]</a></td>
+          <td align="right"><a class="btncheck" href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">Check</a></td>
         </tr>
       <?php } ?>
       <tr>
         <td colspan="4"><span style="text-decoration: underline;">ตัวอย่าง</span></td>
       <tr>
         <td>นาย สมศักดิ์ รักเรียน</td>
-        <td>ศักดิ์</td>
-        <td align="center"><div class="tst tred">ไม่ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center">ศักดิ์</td>
+        <td align="center">ม.4</td>
+        <td><div class="tst tred">ไม่ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นส. สมศรี หนีเรียน</td>
-        <td>ศรี</td>
-        <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center">ศรี</td>
+        <td align="center">ม.6</td>
+        <td><div class="tst tgreen">ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมชาย ไม่เรียน</td>
-        <td>ชาย</td>
-        <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center">ชาย</td>
+        <td align="center">ม.5</td>
+        <td><div class="tst tgreen">ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมโภชณ์ โดดเรียน</td>
-        <td>โภช</td>
-        <td align="center"><div class="tst tred">ไม่ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center">โภช</td>
+        <td align="center">ม.5</td>
+        <td><div class="tst tred">ไม่ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมหญิง วิ่งเรียน</td>
-        <td>หญิง</td>
-        <td align="center"><div class="tst tgreen">ผ่าน</div></td>
-        <td>[Check]</td>
+        <td align="center">หญิง</td>
+        <td align="center">ม.4</td>
+        <td><div class="tst tgreen">ผ่าน</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นส. สมทรง คงเรียน</td>
-        <td>ทรง</td>
-        <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td>[Check]</td>
+        <td align="center">ทรง</td>
+        <td align="center">ม.5</td>
+        <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมปอง ลองเรียน</td>
-        <td>ปอง</td>
-        <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td><a href="check_stu1.php">[Check]</a></td>
+        <td align="center">ปอง</td>
+        <td align="center">ม.4</td>
+        <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
       <tr>
         <td>นาย สมหมาย ใฝ่เรียน</td>
-        <td>หมาย</td>
-        <td align="center"><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-        <td><a href="check_stu1.php">[Check]</a></td>
+        <td align="center">หมาย</td>
+        <td align="center">ม.4</td>
+        <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
+        <td align="right"><a class="btncheck" href="#">Check</a></td>
       </tr>
     </table>
+    จำนวนนักเรียนทั้งหมด <?php echo $num_studata; ?> คน
   </div>
   <div id="st"></div>
   <script src="../js/adminajax.js"></script>

@@ -1,11 +1,24 @@
+/*use for index.php only*/
+body{
+  background-color: #FFF;
+  color: #444;
+}
 .jumbo {
   margin: 10px;
   padding: 0px;
 }
 .jumbotext {
-  font-size: 60px;
-  padding: 100px;
+  font-size: 80px;
+  padding: 50px;
   text-align: center;
+}
+.jumbohead {
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+}
+.jumbopadding{
+  padding:50px;
 }
 .jumbo hr {
   border-color: #8cf;
@@ -22,6 +35,7 @@
     margin: 0px 10px 0px 10px;
   }
 }
+/*section1*/
 .main {
     text-align: center;
   }
@@ -42,4 +56,51 @@
 #staff{
   padding-right: 1.5em;
   padding-left: 1.5em;
+}
+/*alphabet color for dark part*/
+.flag{
+  color: #444;
+}
+/*index section*/
+
+section {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+#section1,#section5{
+    background:#bed8ef;
+  }
+
+#section2,#section4{
+    background:#fffff;
+  }
+
+#section3{
+    background-color: #767070;
+  }
+  /* info */
+.bluebox {
+  background-color: #fff;
+  width: 750px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 3%;
+  border-radius: 20px;
+}
+.infotxt{
+  font-family:"supermarket";
+  font-size: 20px;
+  color: #000;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.headinfotxt{
+  font-family:"supermarket";
+  font-size: 40px;
+  color: #000;
+  text-align: "center";
+  line-height: 100px;
 }
