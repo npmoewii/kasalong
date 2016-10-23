@@ -25,6 +25,12 @@ td {
   margin: 0px;
   padding: 0px 5px 0px 5px;
 }
+section {
+  padding: 0px 10px 10px 10px;
+}
+img {
+  border-width: 0px;
+}
 .header {
   width: 980px;
   margin: auto;
@@ -86,7 +92,7 @@ td {
   border: 1px solid #aaa;
   border-radius: 5px;
 }
-.tst {
+.tst, .tch {
   width: 110px;
   height: 20px;
   margin: 0px;
@@ -112,7 +118,7 @@ td {
   background-color: #bdf;
   color: #00f;
 }
-.change {
+.change, .change2 {
   display: inline;
   cursor: pointer;
 }
@@ -171,6 +177,14 @@ td {
   padding: 0px 0px 0px 10px;
   float: left;
 }
+.profimg {
+  width: 200px;
+  background-color: #ccc;
+}
+.slipimg {
+  width: 80%;
+  background-color: #ccc;
+}
 @media only screen and (max-width:980px) {
   header {
     margin: 10px 10px 0px 10px;
@@ -186,6 +200,21 @@ td {
     margin: 0px;
   }
   .main {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media only screen and (max-witch:700px) {
+  #left {
+    width: 100%;
+  }
+  #right {
+    width: 100%;
+  }
+  .profimg {
+    width: 100%;
+  }
+  .slipimg {
     width: 100%;
   }
 }
