@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "root";
-    $password = "12345678";
+    $password = "";
     $dbname = "kasalong";
 
     $conn = new mysqli($servername,$username,$password);
@@ -72,7 +72,19 @@ CREATE TABLE IF NOT EXISTS info_staff
     phone text not null,
     lineid text null,
     facebook text null
-)");
+)
+","
+CREATE TABLE IF NOT EXISTS `state`
+(
+    `name` VARCHAR(20) NOT NULL PRIMARY KEY,
+    `content_type` VARCHAR(10) NOT NULL,
+    `content` VARCHAR(20) NOT NULL
+)
+","
+INSERT INTO `state` (`name`, `content_type`, `content`) VALUES ('register', 'auto', 'between 2016-11-01 2016-11-30');
+","
+INSERT INTO `state` (`name`, `content_type`, `content`) VALUES ('announce', 'auto', 'after 2016-12-10');
+");
             foreach($str as $sql){
                 if(!$conn->query($sql)){
                     echo "SQL: ".$sql."<br>";
