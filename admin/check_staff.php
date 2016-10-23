@@ -73,6 +73,5 @@ else {
       </div>
     </div>
   </section>
->>>>>>> origin/master
 </body>
 </html>
