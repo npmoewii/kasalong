@@ -1,6 +1,5 @@
 /*use for index.php only*/
 body{
-  background-color: #FFF;
   color: #444;
 }
 .jumbo {
@@ -41,27 +40,29 @@ body{
   }
 .main a{
   box-sizing: border-box;
-  color: #ccc;
+  color: #eee;
+  border: 5px solid currentcolor;
+  font-size: 30px;
   text-decoration: none;
-  background: #333;
-  padding: 15px 17px;
+  background: transparent;
+  padding: .5em 1em;
   border-radius: 5px;
-  margin: 20px 10px;
+  margin: 0px 50px;
   display: inline-block;
+  margin-bottom: 25%;
+
 }
 .main a:hover {
-  background: #444;
+  background: rgba(9,9,9,.5);
   color: #fff;
+  border: 5px solid currentcolor;
 }
 #staff{
   padding-right: 1.5em;
   padding-left: 1.5em;
 }
 /*alphabet color for dark part*/
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 .flag{
   color: #444;
 }
@@ -73,12 +74,16 @@ section {
   box-sizing: border-box;
 
 }
-#section1,#section5{
+#section1{
+  background-image: url(81H.jpg);
+  background-size: 100%;
+}
+#section5{
     background:#bed8ef;
   }
 
 #section2,#section4{
-    background:#fffff;
+    background:#ffffff;
   }
 
 #section3{
@@ -115,8 +120,13 @@ section {
   margin: 0 auto;
 }
 .boxdes {
+<<<<<<< HEAD
   margin-top: 70px;
+=======
+  margin-top: 20%;
+>>>>>>> origin/master
   margin-left: 50px;
+  margin-bottom: 20%;
 	width: 50%;
 }
 .infotxt{
@@ -132,5 +142,19 @@ section {
 	color: #000;
 	text-align: "center";
 	line-height: 100px;
+}
+.topic{
+  display: inline-block;
+  font-family: "supermaket";
+  color: #eee ;
+  border: 7px solid currentcolor;
+  border-radius: 20px;
+  font-size: 100px;
+  padding: .5em 1em;
+  background: transparent;
+  margin-top: 25%;
+  margin-bottom: 2%;
+
+    /*background-color: rgba(255, 255, 255, .8);*/ 
 }
 

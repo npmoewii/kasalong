@@ -30,7 +30,7 @@
   <section id="section1">
     <div class="main" style="margin-top:50px;">
       <div class="jumbo">
-        <div class="jumbotext">Kasalong Camp</div>
+        <div class="topic">Kasalong Camp</div>
       </div>
       <div class="jumbopadding">
         <a href="regis_stu.php">Register for Student</a>
@@ -40,6 +40,7 @@
   </section>
   
   <section id="section2">
+<<<<<<< HEAD
     <div class="medium">
       <div class="boxdes">
         <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
@@ -51,6 +52,29 @@
     <div class="small">
       <img src="pic.png" align="right" width="500px">
     </div>    
+=======
+    <img src="pic.png" align="right" vspace=20% hspace=5% width="500
+    ">
+    <div class="boxdes">
+      <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
+      <div class="infotxt"> 
+      <p>น้องๆอยากทราบไหมว่า พวกพี่ๆวิศวคอมพิวเตอร์เนี่ย วันๆเขาทำอะไรกันบ้าง? เรียนอะไร? ยากง่ายแค่ไหน?</p>
+      <p>ถ้าน้องๆเป็นคนหนึ่งที่มีคำถามแบบนี้อยู่ในใจ ขอแนะนำให้น้องๆเข้ามาสัมผัสประสบการณ์การเรียนวิศวกรรมคอมพิวเตอร์ของจริง ลงมือปฏิบัติจริง ได้ในค่ายคอมแคมป์ ครั้งที่ 27 ที่จะช่วยให้น้องๆได้ไขข้อสงสัย และเข้าใจในภาควิชาวิศวกรรมคอมพิวเตอร์มากขึ้น</p>
+      <p>นอกจากนี้ ค่ายคอมแคมป์ยังมีกิจกรรมสนุกๆอีกมากมาย ที่จะสร้างประสบการณ์ดีๆ พร้อมมิตรภาพจากเพื่อนๆและพี่ๆ ที่สำคัญ ฟรีตลอดค่าย! อีกด้วย ขอเพียงน้องๆเป็นนักเรียนระดับชั้นมัธยมปลาย สายวิทย์ เท่านั้น น้องๆก็สามารถสมัครเข้าร่วมค่ายคอมแคมป์ได้แล้ว! สุดยอดไปเลย >0< รีบสมัครกันมาเยอะๆเลยน้า~</p></div>
+    </div>
+    <!--<div class="content">
+        <h1 style="text-align:center;">Kasalong camp</h1>
+        <h3 style="text-align:center;">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย</h3>
+    </div>
+    <div class="jumbo">
+      <div class="jumbohead">รายละเอียดค่าย</div>
+    </div>
+    <div class="content">
+        <h1 style="text-align:center;">Kasalong camp</h1>
+        <h3 style="text-align:center;">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย</h3>
+    </div>
+    </div>-->
+>>>>>>> origin/master
   </section>
 
   <section id="section3">
@@ -88,6 +112,7 @@
         <div class="desc">ระยะเวลาดำเนินค่าย KASALONG CAMP</div>
       </div>
     </li>
+
 </ul>
 <br>
   </section>
