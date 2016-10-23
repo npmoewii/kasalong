@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/home.css" type="text/css">
   <link rel="stylesheet" href="css/timeline.css" type="text/css">
+  <link rel="stylesheet" href="css/layout.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
@@ -25,6 +26,7 @@
       </ul>
     </div>
   </nav>
+  
   <section id="section1">
     <div class="main" style="margin-top:50px;">
       <div class="jumbo">
@@ -36,16 +38,21 @@
       </div>
     </div>
   </section>
+  
   <section id="section2">
-    <img src="pic.png" align="right" width="500px">
-    <div class="boxdes">
-      <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
-      <p>น้องๆอยากทราบไหมว่า พวกพี่ๆวิศวคอมพิวเตอร์เนี่ย วันๆเขาทำอะไรกันบ้าง? เรียนอะไร? ยากง่ายแค่ไหน?</p>
-      <p>ถ้าน้องๆเป็นคนหนึ่งที่มีคำถามแบบนี้อยู่ในใจ ขอแนะนำให้น้องๆเข้ามาสัมผัสประสบการณ์การเรียนวิศวกรรมคอมพิวเตอร์ของจริง ลงมือปฏิบัติจริง ได้ในค่ายคอมแคมป์ ครั้งที่ 27 ที่จะช่วยให้น้องๆได้ไขข้อสงสัย และเข้าใจในภาควิชาวิศวกรรมคอมพิวเตอร์มากขึ้น</p>
-      <p>นอกจากนี้ ค่ายคอมแคมป์ยังมีกิจกรรมสนุกๆอีกมากมาย ที่จะสร้างประสบการณ์ดีๆ พร้อมมิตรภาพจากเพื่อนๆและพี่ๆ ที่สำคัญ ฟรีตลอดค่าย! อีกด้วย ขอเพียงน้องๆเป็นนักเรียนระดับชั้นมัธยมปลาย สายวิทย์ เท่านั้น น้องๆก็สามารถสมัครเข้าร่วมค่ายคอมแคมป์ได้แล้ว! สุดยอดไปเลย >0< รีบสมัครกันมาเยอะๆเลยน้า~</p>
+    <div class="medium">
+      <div class="boxdes">
+        <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
+        <p>น้องๆอยากทราบไหมว่า พวกพี่ๆวิศวคอมพิวเตอร์เนี่ย วันๆเขาทำอะไรกันบ้าง? เรียนอะไร? ยากง่ายแค่ไหน?</p>
+        <p>ถ้าน้องๆเป็นคนหนึ่งที่มีคำถามแบบนี้อยู่ในใจ ขอแนะนำให้น้องๆเข้ามาสัมผัสประสบการณ์การเรียนวิศวกรรมคอมพิวเตอร์ของจริง ลงมือปฏิบัติจริง ได้ในค่ายคอมแคมป์ ครั้งที่ 27 ที่จะช่วยให้น้องๆได้ไขข้อสงสัย และเข้าใจในภาควิชาวิศวกรรมคอมพิวเตอร์มากขึ้น</p>
+        <p>นอกจากนี้ ค่ายคอมแคมป์ยังมีกิจกรรมสนุกๆอีกมากมาย ที่จะสร้างประสบการณ์ดีๆ พร้อมมิตรภาพจากเพื่อนๆและพี่ๆ ที่สำคัญ ฟรีตลอดค่าย! อีกด้วย ขอเพียงน้องๆเป็นนักเรียนระดับชั้นมัธยมปลาย สายวิทย์ เท่านั้น น้องๆก็สามารถสมัครเข้าร่วมค่ายคอมแคมป์ได้แล้ว! สุดยอดไปเลย >0< รีบสมัครกันมาเยอะๆเลยน้า~</p>
+      </div>
     </div>
-    
+    <div class="small">
+      <img src="pic.png" align="right" width="500px">
+    </div>    
   </section>
+
   <section id="section3">
     <div class="jumbo">
       <div class="jumbohead">กำหนดการ</div>
@@ -84,6 +91,7 @@
 </ul>
 <br>
   </section>
+  
   <section id="section4">
     <div class="jumbo">
       <div class="jumbohead">ถาม-ตอบ</div>
@@ -101,6 +109,7 @@
       </div>
     </div>
   </section>
+  
   <section id="section5">
     <div class="jumbo">
       <div class="jumbohead">ติดต่อสอบถาม</div>
