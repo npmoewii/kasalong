@@ -37,6 +37,7 @@
     </div>
   </section>
   <section id="section2">
+<<<<<<< HEAD
     <img src="pic.png" align="right" vspace="50" hspace=5% width="600
     ">
     <div class="bluebox">
@@ -47,6 +48,17 @@
         <h1 style="text-align:center;">Kasalong camp</h1>
         <h3 style="text-align:center;">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย</h3>
     </div>-->
+=======
+    <div class="jumbo">
+      <div class="jumbohead">รายละเอียดค่าย</div>
+    </div>
+    <div class="content">
+        <h1 style="text-align:center;">Kasalong camp</h1>
+        <h3 style="text-align:center;">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย</h3>
+    </div>
+    </div>
+
+>>>>>>> origin/master
   </section>
   <section id="section3">
     <div class="jumbo">

@@ -15,6 +15,7 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
 </head>
 <body>
   <?php include("nav-inc.html"); ?>
+<<<<<<< HEAD
   <div class="main">
     <ul>
       <li><a href="show_student.php">Show Student Information / Check Student</a></li>
@@ -23,5 +24,17 @@ if (!isset($_SESSION['admin']) || ($_SESSION['admin'] != "pen_pineapple_apple_pe
       <li><a href="show_staff.php">Show Staff Information</a></li>
     </ul>
   </div>
+=======
+  <section>
+    <div class="main">
+      <ul>
+        <li><a href="show_student.php">Show Student Information / Check Student</a></li>
+        <li><a href="passedstulist.php">Show Passed Student / Check Slip</a></li>
+        <li>Show Passed Student (slip checked)</li>
+        <li><a href="show_staff.php">Show Staff Information</a></li>
+      </ul>
+    </div>
+  </section>
+>>>>>>> origin/master
 </body>
 </html>

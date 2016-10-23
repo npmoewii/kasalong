@@ -10,6 +10,16 @@
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
+=======
+    <nav>
+        <div class="navbar">
+          <div class="heading">
+            <div class="title">KASALONG</div>
+          </div>
+    </nav>
+    <div class="navbar"></div>
+>>>>>>> origin/master
     <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
         <p id="head">ข้อมูลส่วนตัว</p>
         อัพโหลดรูปส่วนตัว <input type="file" name="img_prof" accept=".jpg" required><br>
@@ -35,6 +45,10 @@
             <textarea class="textinput" rows="10" cols="60" name="address" required></textarea><br>
         </div>
         <hr class="hrr" color=#fff >
+<<<<<<< HEAD
+=======
+        เบอร์โทรศัพท์ <input type="tel" name="stel" required><br>
+>>>>>>> origin/master
         E-mail <input type="email" name="email"><br>
         Facebook <input type="text" name="facebook"><br>
         ระดับชั้น
@@ -84,7 +98,11 @@
         <br>
         คณะที่อยากเข้าศึกษา/มหาวิทยาลัยที่อยากเข้าศึกษา <input type="text" name="future"><br>
 
+<<<<<<< HEAD
         1. สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
+=======
+        สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
+>>>>>>> origin/master
         <div class="comment-text-area">
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
