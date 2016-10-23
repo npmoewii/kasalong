@@ -92,17 +92,7 @@
         <br>
         คณะที่อยากเข้าศึกษา/มหาวิทยาลัยที่อยากเข้าศึกษา <input type="text" name="future"><br>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
-=======
-        <p>คำถาม</p>
-        1. สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
->>>>>>> origin/master
-=======
-        <p>คำถาม</p>
-        1. สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
->>>>>>> origin/master
         <div class="comment-text-area">
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
