@@ -1,7 +1,7 @@
 <?php
 include("connect.php");
 if(isset($_POST['btn-submit'])){
-    $sql = "select sname,ssurname from info_student where nationid='".$_POST['nationid']."'";
+    $sql = "SELECT sname,ssurname FROM info_student WHERE nationid='".$_POST['nationid']."'";
     $result = $conn->query($sql);
     if($result->num_rows>0){
         $result = $result->fetch_assoc();
@@ -63,7 +63,7 @@ if(isset($_POST['btn-submit'])){
                         $res = "Registation Failed: ".$conn->error;
                     }
                 }
-                else{   //Upload img_prof failed
+                else {   //Upload img_prof failed
                     $res = "Registation Failed: Upload image profile failed.".$_FILES['img_prof']['name'];
                 }
             }
