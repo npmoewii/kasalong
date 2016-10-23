@@ -84,7 +84,7 @@ nav {
 }
 /* Other Classes */
 .main {
-  width: 980px;
+  width: 1200px;
   margin: auto;
 }
 
@@ -121,11 +121,10 @@ nav {
     background:#bed8ef;
     /*box-shadow: #f00;*/
   }
-#section2{
-	background-image: url("section2bg.jpg");
-}
+#section2,
 #section4{
     background: #ffffff;
+    font-size: 18px;
   }
 
 #section3{

@@ -28,10 +28,8 @@
   </nav>
   
   <section id="section1">
-    <div class="main" style="margin-top:50px;">
-      <div class="jumbo">
-        <div class="topic">Kasalong Camp</div>
-      </div>
+    <div class="main">
+      <div class="topic">Kasalong Camp</div>
       <div class="jumbopadding">
         <a href="regis_stu.php">Register for Student</a>
         <a id="staff" href="regis_staff.php">Register for Staff</a>
@@ -40,6 +38,7 @@
   </section>
   
   <section id="section2" id="pattern" class="pattern">
+  <br>
   <ul class="grid">
       <li class="wide">
         <div>
@@ -61,6 +60,7 @@
   </section>
 
   <section id="section3">
+  <br>
     <div class="jumbo">
       <div class="jumbohead">กำหนดการ</div>
     </div>
@@ -95,7 +95,6 @@
         <div class="desc">ระยะเวลาดำเนินค่าย KASALONG CAMP</div>
       </div>
     </li>
-
 </ul>
 <br>
   </section>
