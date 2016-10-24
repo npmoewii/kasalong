@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/layout.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
-<body>
+<body background="img/81H.jpg">
   <nav>
     <div class="navbar">
       <div class="heading">
@@ -26,7 +26,6 @@
       </ul>
     </div>
   </nav>
-  
   <section id="section1">
     <div class="main">
       <div class="topic">Kasalong Camp</div>
@@ -52,7 +51,7 @@
       <li>
         <div>
           
-            <img src="pic.png"  width="500px">
+            <img src="img/pic.png"  width="500px">
           
         </div>
       </li>

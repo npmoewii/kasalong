@@ -69,16 +69,13 @@ section {
   box-sizing: border-box;
 
 }
-#section1{
-  background-image: url(81H.jpg);
- 
-}
 #section5{
     background:#bed8ef;
   }
 
 #section2,#section4{
     background:#ffffff;
+    font-size: 18px;
   }
 
 #section3{
