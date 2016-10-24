@@ -177,11 +177,17 @@
 }
 }
 @media only screen and (max-width:700px){
-  /*request front go here*/
+/*for timeline*/
+.flag-wrapper{
+  text-align: center;
+}
 .flag{
+  color: #fff;
   font-size: 18px;
 }
 .desc {
+  color: #ccc;
   font-size: 20px;
+  text-align: center;
 }
 }
