@@ -11,7 +11,7 @@ if(isset($_POST['btn-submit'])){
         if(isset($_FILES['img_prof']['tmp_name'])){
             $imgdir = "../img/staff_profile/";
             $arrs = explode(".",$_FILES['img_prof']['name']);
-            $imgtype = $arrs[1];
+            $imgtype = $arrs[$count($arrs)-1];
             $imgname = "prof_".$_POST['idstu'].".".$imgtype;
 
             if($imgtype=="jpg"||$imgtype=="jpeg"){
