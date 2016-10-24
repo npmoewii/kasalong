@@ -20,7 +20,7 @@
     <hr class="hrrr">
     <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
       <p class="head" id="personalhead">ข้อมูลส่วนตัว</p>
-      <div id="personalinfo">
+      <div id="personalinfo" style="display:none;">
         อัพโหลดรูปส่วนตัว <input type="file" name="img_prof" accept=".jpg" required><br>
         คำนำหน้าชื่อ
         <select name="title" required>
