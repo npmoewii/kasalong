@@ -1,10 +1,10 @@
 .timeline {
   position: relative;
-  width: 660px;
+  width:100%;
   margin: 0 auto;
   margin-top: 20px;
-  padding: 1em 0;
-  list-style-type: none;
+  /*padding: 1em 0;
+  list-style-type: none;*/
 }
 
 .timeline:before {
@@ -49,7 +49,7 @@
 .direction-r {
   position: relative;
   width: 300px;
-  float: right;
+  float: center;
 }
 
 .flag-wrapper {
@@ -165,7 +165,7 @@
 }
 
 /*resposive*/
-/*@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1000px) {
   .navbar {
     margin: 0px;
     width: 100%;
@@ -176,7 +176,7 @@
 }
 @media only screen and (max-width:700px) {
   .navbar .heading {
-    width: 100%;
+    width: 50%;
     overflow: auto;
   }
   .navbar li {
