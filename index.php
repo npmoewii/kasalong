@@ -22,7 +22,7 @@
         <li class="page-scroll"><a href="#section3">กำหนดการ</a></li>
         <li class="page-scroll"><a href="#section4">ถาม-ตอบ</a></li>
         <li class="page-scroll"><a href="#section5">ติดต่อสอบถาม</a></li>
-        <li class="right"><a href="upslip_1.php">Login</a></li>
+        <li class="right"><a href="slippage.php">Login</a></li>
       </ul>
     </div>
   </nav>
@@ -135,7 +135,7 @@
           พี่นัท 0584894484<br>
           พี่ตั้ม 0584894484<br>
           <br>
-          <h3>อัีเมลล์</h3>
+          <h3>อีเมลล์</h3>
           dfdsggs@fgsg.com
         </div>
       </ul>
