@@ -1,0 +1,57 @@
+html, body
+{
+    height: 100%;
+}
+#nationid {
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 3px;
+	height: 31px;
+	width: 240px;
+	font-size: 20px;
+}
+#indicator{
+	position: relative;
+	width:50px;
+	height:50px;
+	display:inline-block;
+	padding-top:10px;
+}
+#nationid:focus {
+    border: 1px solid #07c;
+    box-shadow: 0 0 5px #07c;
+    outline: none;
+}
+
+#container{
+	background-color:#FFFFFF;
+	width:80%;
+	height:100%;
+	box-shadow: 0 0 10px #989898;
+	margin: 0 auto;
+	position: relative;
+	
+}
+#ff{
+    margin: auto;
+	text-align:center;
+	width: 280px;
+}
+#hea{
+	margin: 0 auto;
+	font-family: "supermarket";
+	font-size:25px;
+	text-align: center;
+}
+#conte{
+	position: absolute;
+	top: 20%;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+#ups{
+	padding-top:10px;
+}
+#sub{
+	margin-top:10px;
+}
