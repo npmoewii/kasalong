@@ -62,8 +62,8 @@
             <option value="XL">XL</option>
             <option value="XXL">XXL</option>
         </select><br>
-        <hr class="hrr">
       </div>
+      <hr class="hrr">
       <p class="head" id="parenthead">ข้อมูลผู้ปกครอง</p>
       <div id="parentinfo" style="display:none;">
         ชื่อ-สกุล ผู้ปกครอง <input type="text" name="pname" required><br>
