@@ -1,10 +1,17 @@
-/*use for index.php only*/
-body{
-  color: #444;
-}
+/*responsive*/
+
+@media only screen and (max-width:1000px) {
+  section {
+    margin: 0px;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+
 .jumbotext {
-  font-size: 80px;
-  padding: 50px;
+  font-size: 54%;
+  padding: 5%px;
   text-align: center;
 }
 .jumbohead {
@@ -13,7 +20,7 @@ body{
   text-align: center;
 }
 .jumbopadding{
-  padding:30px;
+  padding:60px;
 }
 .jumbo hr {
   border-color: #8cf;
@@ -132,7 +139,7 @@ section {
 }
 .headinfotxt{
   font-family:"supermarket";
-  font-size: 30px;
+  font-size: 40px;
   color: #000;
   text-align: "center";
   line-height: 100px;
@@ -142,10 +149,10 @@ section {
   color: #eee;
   border: 7px solid currentcolor;
   border-radius: 20px;
-  font-size: 60px;
+  font-size: 80px;
   padding: .5em 1em;
   background: transparent;
-  margin-top:10%;
+  margin-top:15%;
   margin-bottom: 2%;
 
 
@@ -155,13 +162,3 @@ li{
     list-style: none;
 }
 
-/*responsive*/
-/*@media only screen and (max-width:1000px) {
-  section {
-    margin: 0px;
-    width: 100%;
-  }
-  section {
-    width: 100%;
-  }
-}
