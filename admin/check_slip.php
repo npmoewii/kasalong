@@ -52,7 +52,7 @@ else {
       </h3>
       <p align="center">
         <a href="<?php echo $data_slip['img_slip']; ?>">
-          <img class="slipimg" src="<?php echo $data_slip['img_slip']; ?>" alt="" />
+          <img class="slipimg" src="../img/slips/<?php echo $data_slip['img_slip']; ?>" alt="" />
         </a>
       </p>
       <div id="statusnow" class="tstlarge <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
