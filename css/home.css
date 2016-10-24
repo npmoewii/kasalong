@@ -134,7 +134,6 @@ section {
 }
 .topic{
   display: inline-block;
-  font-family: "supermaket";
   color: #eee;
   border: 7px solid currentcolor;
   border-radius: 20px;
@@ -144,5 +143,5 @@ section {
   margin-top:15%;
   margin-bottom: 2%;
 
-    /*background-color: rgba(255, 255, 255, .8);*/ 
+    /*background-color: rgba(255, 255, 255, .8);*/
 }
