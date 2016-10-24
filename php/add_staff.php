@@ -16,7 +16,6 @@ if(isset($_POST['btn-submit'])){
 
             if (!file_exists("../img/staff_profile")) {
               mkdir("../img/staff_profile", 0766);
-              echo "Folder created";
             }
             if($imgtype=="jpg"||$imgtype=="jpeg"){
                 if(move_uploaded_file($_FILES['img_prof']['tmp_name'],$imgdir.$imgname)){

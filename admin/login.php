@@ -44,7 +44,7 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
       <form name="loginadmin" action="" method="post">
         <label>
           Password:
-          <input type="password" name="pwd" placeholder="Enter Password">
+          <input type="password" name="pwd" placeholder="Enter Password" autofocus="autofocus">
         </label>
         <input type="hidden" name="request" value="admin-login">
         <input type="submit" name="btnSubmit" value="Login">

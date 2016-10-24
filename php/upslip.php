@@ -12,8 +12,7 @@ if(isset($_POST['btn-submit'])){
 	$count = $result->num_rows;
 	$res;
   if (!file_exists("../img/slips")) {
-    mkdir("../img/staff_profile", 0766);
-    echo "Folder created";
+    mkdir("../img/slips", 0766);
   }
 	if(move_uploaded_file($_FILES['slipsub']['tmp_name'],$imgdir.$imgname)){
 		if ($count == 0)
@@ -28,10 +27,18 @@ if(isset($_POST['btn-submit'])){
 			unlink("img/slips/".$imgname);
 			$res = "ERROR!: ".$conn->error;
 		}
-		echo "<script>
-		alert('$res');
-		window.location.href='../slippage.php';
-		</script>";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  alert("<?php echo $res; ?>");
+  window.location.href='../slippage.php';
+  </script>
+</head>
+</html>
+<?php
 	}
 }
 ?>
