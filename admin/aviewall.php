@@ -33,11 +33,12 @@ $state = $conn->query($sql_state);
           <td><?php echo $row_state['name'] ?></td>
           <td><?php echo $row_state['content_type'] ?></td>
           <td><?php echo $row_state['content'] ?></td>
-          <td align="right"><a class="btncheck" href="#">Edit</a></td>
+          <td align="right"><a class="btncheck" href="editstate.php?name=<?php echo $row_state['name']; ?>">Edit</a></td>
         </tr>
         <?php } ?>
       </table>
     </div>
   </section>
+  <script src="../js/admin.js"></script>
 </body>
 </html>

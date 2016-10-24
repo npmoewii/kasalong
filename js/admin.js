@@ -24,6 +24,7 @@ $('.change2').click(function() {
            setTimeout(updatetwo, 10);
          });
 });
+$()
 function updateone() {
   id = $("#st").attr("data-id");
   $("#st").load("../php/aloadstatus.php?id="+id,

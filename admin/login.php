@@ -34,6 +34,7 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
   <nav>
     <div class="navbar">
       <ul>
+        <li><a href="../index.php">Main Page</a></li>
         <li><a href="login.php">Login</a></li>
       </ul>
     </div>
