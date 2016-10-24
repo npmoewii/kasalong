@@ -10,12 +10,14 @@
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
+    <div class="hrrr"></div>
     <nav>
         <div class="navbar">
           <div class="heading">
             <div class="title"><a href="index.php">KASALONG</a></div>
           </div>
     </nav>
+    <hr class="hrrr">
     <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
       <p class="head" id="personalhead">ข้อมูลส่วนตัว</p>
       <div id="personalinfo">
@@ -63,7 +65,8 @@
             <option value="XXL">XXL</option>
         </select><br>
       </div>
-      <hr class="hrr">
+      </form>
+      <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
       <p class="head" id="parenthead">ข้อมูลผู้ปกครอง</p>
       <div id="parentinfo" style="display:none;">
         ชื่อ-สกุล ผู้ปกครอง <input type="text" name="pname" required><br>
@@ -73,7 +76,8 @@
         ชื่อ-สกุล มารดา <input type="text" name="mname"><br>
         เบอร์โทรศัพท์มารดา <input type="tel" name="mtel"><br>
       </div>
-        <hr class="hrr">
+        </form>
+        <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
       <p class="head" id="otherhead">ข้อมูลอื่นๆ</p>
       <div id="otherinfo" style="display:none;">
         เคยเข้าค่ายกาสะลองหรือไม่
@@ -101,9 +105,8 @@
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
       </div>
-      <hr class="hrr" color=#fff >
+      </form>
       <button type="submit" name="btn-submit">Submit</button>
-    </form>
   <script src="js/regis_stu.js"></script>
 </body>
 </html>
