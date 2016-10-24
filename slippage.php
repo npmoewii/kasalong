@@ -5,11 +5,12 @@
 	 $("#ups").hide();
 	 $("#sub").hide();
 	}
-function myFunction() {
+	function myFunction() {
 		var ob = document.getElementById("nationid");
 		var nid = ob.value;
 		$.ajax({
 			type: 'POST',
+			async: true,
 			url: 'php/checkexist.php',
 			data: { tt: nid },
 			success: function(response) {
@@ -29,17 +30,17 @@ function myFunction() {
 	}
 </script>
 <head>
-    <title>หน้าส่งสลิปไงละไอน้อง</title>
+    <title>ส่งสลิป</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-	<form action="php/upslip.php" method="post" enctype="multipart/form-data">
-        กรอกเลขประจำตัวประชาชนก่อนไงละไอน้อง<input type="text" id="nationid" onkeyup="myFunction()">
+	<form action="php/upslip.php" method="post" enctype="multipart/form-data" onkeypress="return event.keyCode != 13;">
+        <input type="text" id="nationid" onkeyup="myFunction()" name="nationid" required>
         <div id="indicator"></div>
-        <input id="ups" type="file" name="slipsub" accept=".jpg" required>
+        <input id="ups" type="file" name="slipsub" accept="*.*" required>
         <button id="sub" type="submit" name="btn-submit">Submit</button>
-    </form>
+     </form>
 </body>
 </html>
