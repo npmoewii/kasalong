@@ -25,16 +25,19 @@ form {
 	text-align: left;
 	margin-bottom: 230px;
 }
-input, select{
-	padding: 1.5em 2em;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	box-sizing: border-box;
-	font-size: 13px;
-	margin: 20px auto;
-	display: block;
-	clear: none;
-	width: 100%;
+input, textarea, select{
+  padding: 1.5em 2em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #444;
+  font-size: 13px;
+  margin: 20px auto;
+  clear: none;
+}
+input[type=text], input[type=email], input[type=tel], input[type=file], input[type=date], select {
+  width: 100%;
+  display: block;
 }
 button {
 	color: #FFF;

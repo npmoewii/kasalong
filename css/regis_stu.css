@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-#head {
+.head {
   font-size: 30px;
   color:#aaa;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
   font-weight: normal;
   text-transform: uppercase;
   padding-bottom: 30px;
+  cursor: pointer;
 }
 form {
   background-color: #FFF;
@@ -25,7 +26,7 @@ form {
   text-align: left;
   margin-bottom: 230px;
 }
-input, select{
+input, textarea, select{
   padding: 1.5em 2em;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -33,9 +34,11 @@ input, select{
   color: #444;
   font-size: 13px;
   margin: 20px auto;
-  display: block;
   clear: none;
+}
+input[type=text], input[type=email], input[type=tel], input[type=file], input[type=date], select {
   width: 100%;
+  display: block;
 }
 button {
   color: #FFF;
@@ -67,7 +70,7 @@ button {
   border: 1px solid
   color #333 ;
 }
- 
+
 .hrr{
   margin-top: 50px;
   margin-bottom: 50px;

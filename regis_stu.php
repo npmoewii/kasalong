@@ -16,16 +16,16 @@
             <div class="title"><a href="index.php">KASALONG</a></div>
           </div>
     </nav>
-    <div class="navbar"></div>
     <form action="php/add_stu.php" method="post" enctype="multipart/form-data">
-        <p id="head">ข้อมูลส่วนตัว</p>
+      <p class="head" id="personalhead">ข้อมูลส่วนตัว</p>
+      <div id="personalinfo">
         อัพโหลดรูปส่วนตัว <input type="file" name="img_prof" accept=".jpg" required><br>
         คำนำหน้าชื่อ
         <select name="title" required>
             <option value="นาย">นาย</option>
             <option value="นางสาว">นางสาว</option>
         </select>
-        ชื่อ <input type="text" name="sname" required width="50" heigh>
+        ชื่อ <input type="text" name="sname" required width="50">
         นามสกุล <input type="text" name="ssurname" required>
         ชื่อเล่น <input type="text" name="nickname" required>
         วัน/เดือน/ปี เกิด <input type="date" name="birth" required>
@@ -63,31 +63,35 @@
             <option value="XXL">XXL</option>
         </select><br>
         <hr class="hrr">
-        <p id="head">ข้อมูลผู้ปกครอง</p>
+      </div>
+      <p class="head" id="parenthead">ข้อมูลผู้ปกครอง</p>
+      <div id="parentinfo" style="display:none;">
         ชื่อ-สกุล ผู้ปกครอง <input type="text" name="pname" required><br>
         เบอร์โทรศัพท์ผู้ปกครอง <input type="tel" name="ptel" required><br>
         ชื่อ-สกุล บิดา <input type="text" name="fname"><br>
         เบอร์โทรศัพท์บิดา <input type="tel" name="ftel"><br>
         ชื่อ-สกุล มารดา <input type="text" name="mname"><br>
         เบอร์โทรศัพท์มารดา <input type="tel" name="mtel"><br>
+      </div>
         <hr class="hrr">
-        <p id="head">ข้อมูลอื่นๆ</p>
+      <p class="head" id="otherhead">ข้อมูลอื่นๆ</p>
+      <div id="otherinfo" style="display:none;">
         เคยเข้าค่ายกาสะลองหรือไม่
-        <input type="radio" value="true" name="went">เคย
-        <input type="radio" value="false" name="went">ไม่เคย <br>
+        <input type="radio" value="true" name="went"> เคย
+        <input type="radio" value="false" name="went"> ไม่เคย<br>
         เกรดเฉลี่ยรวม <input type="text" name="gpax"><br>
         เกรดเฉลี่ยเทอมล่าสุด <input type="text" name="gpa"><br>
         อาชีพที่อยากทำในอนาคต <input type="text" name="job"><br>
 
         ความสนใจในเนื้อหา<br>
-        GAT <input type="checkbox" name="ent[]" value="GAT" >
-        PAT 1<input type="checkbox" name="ent[]" value="PAT1">
-        PAT 2<input type="checkbox" name="ent[]" value="PAT2">
-        PAT 3<input type="checkbox" name="ent[]" value="PAT3">
-        PAT 4<input type="checkbox" name="ent[]" value="PAT4">
-        PAT 5<input type="checkbox" name="ent[]" value="PAT5">
-        PAT 6<input type="checkbox" name="ent[]" value="PAT6">
-        PAT 7<input type="checkbox" name="ent[]" value="PAT7">
+        <input type="checkbox" name="ent[]" value="GAT" > GAT
+        <input type="checkbox" name="ent[]" value="PAT1"> PAT 1
+        <input type="checkbox" name="ent[]" value="PAT2"> PAT 2
+        <input type="checkbox" name="ent[]" value="PAT3"> PAT 3
+        <input type="checkbox" name="ent[]" value="PAT4"> PAT 4
+        <input type="checkbox" name="ent[]" value="PAT5"> PAT 5
+        <input type="checkbox" name="ent[]" value="PAT6"> PAT 6
+        <input type="checkbox" name="ent[]" value="PAT7"> PAT 7
 
         <br>
         คณะที่อยากเข้าศึกษา/มหาวิทยาลัยที่อยากเข้าศึกษา <input type="text" name="future"><br>
@@ -96,11 +100,10 @@
         <div class="comment-text-area">
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
-
-
+      </div>
         <hr class="hrr" color=#fff >
-
         <button type="submit" name="btn-submit">Submit</button>
     </form>
+  <script src="js/regis_stu.js"></script>
 </body>
 </html>

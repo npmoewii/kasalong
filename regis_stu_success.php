@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="result">
-		<p id="head">สมัครเสร็จสมบูรณ์</p>
+		<p id="head">ผลการสมัคร</p>
 	    <?php echo $_GET['result']; ?>
 	    <br/>
 	    <a href="index.php">home</a></div>

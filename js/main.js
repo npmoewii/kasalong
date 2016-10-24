@@ -3,7 +3,7 @@ $('#navbutton').click(function() {
 });
 $('.page-scroll').click(function() {
   id = $(this).find('a').attr("href");
-  $('body').animate(
+  $('html, body').animate(
     {
       scrollTop: ($(id).offset().top)
     },'slow'
