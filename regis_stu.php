@@ -98,12 +98,13 @@
         <input type="checkbox" name="ent[]" value="PAT7"> PAT 7
 
         <br>
-        คณะที่อยากเข้าศึกษา/มหาวิทยาลัยที่อยากเข้าศึกษา <input type="text" name="future"><br>
+        
 
         สาเหตุที่สมัครค่ายและสิ่งที่คาดหวังว่าจะได้รับ<br>
         <div class="comment-text-area">
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
+        คณะที่อยากเข้าศึกษา/มหาวิทยาลัยที่อยากเข้าศึกษา <input type="text" name="future"><br>
       </div>
       </form>
       <button type="submit" name="btn-submit">Submit</button>
