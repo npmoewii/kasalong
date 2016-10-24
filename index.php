@@ -51,7 +51,7 @@
       <li>
         <div>
 
-            <img src="img/pic.png"  width="500px">
+            <img src="img/pic.png"  width="100%">
 
         </div>
       </li>
