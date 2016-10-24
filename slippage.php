@@ -16,12 +16,12 @@
 			success: function(response) {
 				//alert(response);
 				if(response==true){
-					document.getElementById("indicator").innerHTML = "<img src='img/valid.png'>";
+					document.getElementById("indicator").innerHTML = "<img src='img/valid.png'><br/>ผา่น";
 					$("#ups").fadeIn(1000);
 					$("#sub").fadeIn(1000);
 				}
 				else{
-					document.getElementById("indicator").innerHTML = "<img src='img/invalid.png'>";
+					document.getElementById("indicator").innerHTML = "<img src='img/invalid.png'><br/>ไม่ผ่าน";
 					$("#ups").fadeOut(1000);
 					$("#sub").fadeOut(1000);
 				}
