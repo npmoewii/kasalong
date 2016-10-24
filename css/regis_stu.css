@@ -70,8 +70,10 @@ button {
   border: 1px solid
   color #333 ;
 }
-
 .hrr{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.error {
+  border-color: #f00;
 }

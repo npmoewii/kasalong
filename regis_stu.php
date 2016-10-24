@@ -29,20 +29,20 @@
         นามสกุล <input type="text" name="ssurname" required>
         ชื่อเล่น <input type="text" name="nickname" required>
         วัน/เดือน/ปี เกิด <input type="date" name="birth" required>
-        เลขประจำตัวประชาชน <input type="text" name="nationid" required>
+        เลขประจำตัวประชาชน <input type="text" name="nationid" id="nationid" required>
         ศาสนา
         <select name="region" required>
             <option value="พุทธ">พุทธ</option>
             <option value="คริสต์">คริสต์</option>
             <option value="อิสลาม">อิสลาม</option>
-            <option value="อิสลาม">ซกส์</option>
+            <option value="อิสลาม">อื่นๆ</option>
         </select><br>
         ที่อยู่ <br>
         <div class="comment-text-area">
             <textarea class="textinput" rows="10" cols="60" name="address" required></textarea><br>
         </div>
         <hr class="hrr" color=#fff >
-        เบอร์โทรศัพท์ <input type="tel" name="stel" required><br>
+        เบอร์โทรศัพท์ <input type="tel" name="stel" id="stel" required><br>
         E-mail <input type="email" name="email"><br>
         Facebook <input type="text" name="facebook"><br>
         ระดับชั้น
@@ -67,7 +67,7 @@
       <p class="head" id="parenthead">ข้อมูลผู้ปกครอง</p>
       <div id="parentinfo" style="display:none;">
         ชื่อ-สกุล ผู้ปกครอง <input type="text" name="pname" required><br>
-        เบอร์โทรศัพท์ผู้ปกครอง <input type="tel" name="ptel" required><br>
+        เบอร์โทรศัพท์ผู้ปกครอง <input type="tel" name="ptel" id="ptel" required><br>
         ชื่อ-สกุล บิดา <input type="text" name="fname"><br>
         เบอร์โทรศัพท์บิดา <input type="tel" name="ftel"><br>
         ชื่อ-สกุล มารดา <input type="text" name="mname"><br>
