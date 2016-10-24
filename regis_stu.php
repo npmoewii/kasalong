@@ -28,8 +28,8 @@
         ชื่อ <input type="text" name="sname" required width="50">
         นามสกุล <input type="text" name="ssurname" required>
         ชื่อเล่น <input type="text" name="nickname" required>
-        วัน/เดือน/ปี เกิด <input type="date" name="birth" required>
-        เลขประจำตัวประชาชน <input type="text" name="nationid" id="nationid" required>
+        วันเกิด <input type="date" name="birth" required>
+        เลขประจำตัวประชาชน <input type="text" name="nationid" id="nationid" maxlength="13" required>
         ศาสนา
         <select name="region" required>
             <option value="พุทธ">พุทธ</option>
@@ -42,7 +42,7 @@
             <textarea class="textinput" rows="10" cols="60" name="address" required></textarea><br>
         </div>
         <hr class="hrr" color=#fff >
-        เบอร์โทรศัพท์ <input type="tel" name="stel" id="stel" required><br>
+        เบอร์โทรศัพท์ <input type="tel" name="stel" id="stel" maxlength="10" required><br>
         E-mail <input type="email" name="email"><br>
         Facebook <input type="text" name="facebook"><br>
         ระดับชั้น
