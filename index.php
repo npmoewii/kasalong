@@ -7,10 +7,9 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/home.css" type="text/css">
   <link rel="stylesheet" href="css/timeline.css" type="text/css">
-  <link rel="stylesheet" href="css/layout.css" type="text/css">
   <script src="js/jquery.min.js"></script>
 </head>
-<body background="img/81H.jpg">
+<body>
   <nav>
     <div class="navbar">
       <div class="heading">
@@ -22,45 +21,33 @@
         <li class="page-scroll"><a href="#section3">กำหนดการ</a></li>
         <li class="page-scroll"><a href="#section4">ถาม-ตอบ</a></li>
         <li class="page-scroll"><a href="#section5">ติดต่อสอบถาม</a></li>
-        <li class="right"><a href="upslip_1.php">Login</a></li>
+        <li class="page-scroll"><a href="slippage.php">ยืนยันสลิป</a></li>
+        <li class="right"><a href="login.php">Login</a></li>
       </ul>
     </div>
   </nav>
   <section id="section1">
-    <div class="main">
-      <div class="topic">Kasalong Camp</div>
+    <div class="main" style="margin-top:50px;">
+      <div class="jumbo">
+        <div class="jumbotext">Kasalong Camp</div>
+      </div>
       <div class="jumbopadding">
         <a href="regis_stu.php">Register for Student</a>
         <a id="staff" href="regis_staff.php">Register for Staff</a>
       </div>
     </div>
   </section>
-  
-  <section id="section2" id="pattern" class="pattern">
-  <br>
-  <ul class="grid">
-      <li class="wide">
-        <div>
-          
-            <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
-          <p>น้องๆอยากทราบไหมว่า พวกพี่ๆวิศวคอมพิวเตอร์เนี่ย วันๆเขาทำอะไรกันบ้าง? เรียนอะไร? ยากง่ายแค่ไหน?</p>
-          <p>ถ้าน้องๆเป็นคนหนึ่งที่มีคำถามแบบนี้อยู่ในใจ ขอแนะนำให้น้องๆเข้ามาสัมผัสประสบการณ์การเรียนวิศวกรรมคอมพิวเตอร์ของจริง ลงมือปฏิบัติจริง ได้ในค่ายคอมแคมป์ ครั้งที่ 27 ที่จะช่วยให้น้องๆได้ไขข้อสงสัย และเข้าใจในภาควิชาวิศวกรรมคอมพิวเตอร์มากขึ้น</p>
-          <p>นอกจากนี้ ค่ายคอมแคมป์ยังมีกิจกรรมสนุกๆอีกมากมาย ที่จะสร้างประสบการณ์ดีๆ พร้อมมิตรภาพจากเพื่อนๆและพี่ๆ ที่สำคัญ ฟรีตลอดค่าย! อีกด้วย ขอเพียงน้องๆเป็นนักเรียนระดับชั้นมัธยมปลาย สายวิทย์ เท่านั้น น้องๆก็สามารถสมัครเข้าร่วมค่ายคอมแคมป์ได้แล้ว! สุดยอดไปเลย >0< รีบสมัครกันมาเยอะๆเลยน้า~</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          
-            <img src="img/pic.png"  width="500px">
-          
-        </div>
-      </li>
-    </ul>
-
+  <section id="section2">
+    <img src="pic.png" align="right" width="500px">
+    <div class="boxdes">
+      <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
+      <p>น้องๆอยากทราบไหมว่า พวกพี่ๆวิศวคอมพิวเตอร์เนี่ย วันๆเขาทำอะไรกันบ้าง? เรียนอะไร? ยากง่ายแค่ไหน?</p>
+      <p>ถ้าน้องๆเป็นคนหนึ่งที่มีคำถามแบบนี้อยู่ในใจ ขอแนะนำให้น้องๆเข้ามาสัมผัสประสบการณ์การเรียนวิศวกรรมคอมพิวเตอร์ของจริง ลงมือปฏิบัติจริง ได้ในค่ายคอมแคมป์ ครั้งที่ 27 ที่จะช่วยให้น้องๆได้ไขข้อสงสัย และเข้าใจในภาควิชาวิศวกรรมคอมพิวเตอร์มากขึ้น</p>
+      <p>นอกจากนี้ ค่ายคอมแคมป์ยังมีกิจกรรมสนุกๆอีกมากมาย ที่จะสร้างประสบการณ์ดีๆ พร้อมมิตรภาพจากเพื่อนๆและพี่ๆ ที่สำคัญ ฟรีตลอดค่าย! อีกด้วย ขอเพียงน้องๆเป็นนักเรียนระดับชั้นมัธยมปลาย สายวิทย์ เท่านั้น น้องๆก็สามารถสมัครเข้าร่วมค่ายคอมแคมป์ได้แล้ว! สุดยอดไปเลย >0< รีบสมัครกันมาเยอะๆเลยน้า~</p>
+    </div>
+    
   </section>
-
   <section id="section3">
-  <br>
     <div class="jumbo">
       <div class="jumbohead">กำหนดการ</div>
     </div>
@@ -98,7 +85,6 @@
 </ul>
 <br>
   </section>
-  
   <section id="section4">
     <div class="jumbo">
       <div class="jumbohead">ถาม-ตอบ</div>
@@ -116,30 +102,9 @@
       </div>
     </div>
   </section>
-  
   <section id="section5">
     <div class="jumbo">
       <div class="jumbohead">ติดต่อสอบถาม</div>
-      <ul class="grid">
-        <li>
-        <div class="wide">
-          <h3>ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี </h3>
-          <p>ชั้น10 อาคารวิศววัฒนะ 126 ถ.ประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140 </p>
-        </div>
-      </li>
-      <li>
-        <div class="wide">
-          <h3>โทรศัพท์</h3>
-          พี่มิ้นท์ 0584894445 <br>
-          พี่อัยย์ 0584894484<br>
-          พี่นัท 0584894484<br>
-          พี่ตั้ม 0584894484<br>
-          <br>
-          <h3>อัีเมลล์</h3>
-          dfdsggs@fgsg.com
-        </div>
-      </ul>
-    </div>
     </div>
   </section>
   <footer>KASALONG CAMP</footer>
