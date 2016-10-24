@@ -13,7 +13,7 @@ body{
   text-align: center;
 }
 .jumbopadding{
-  padding:60px;
+  padding:30px;
 }
 .jumbo hr {
   border-color: #8cf;
@@ -132,7 +132,7 @@ section {
 }
 .headinfotxt{
   font-family:"supermarket";
-  font-size: 40px;
+  font-size: 30px;
   color: #000;
   text-align: "center";
   line-height: 100px;
@@ -142,10 +142,10 @@ section {
   color: #eee;
   border: 7px solid currentcolor;
   border-radius: 20px;
-  font-size: 80px;
+  font-size: 60px;
   padding: .5em 1em;
   background: transparent;
-  margin-top:15%;
+  margin-top:10%;
   margin-bottom: 2%;
 
 <<<<<<< HEAD
