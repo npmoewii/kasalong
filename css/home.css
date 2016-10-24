@@ -57,9 +57,14 @@ body{
   padding-left: 1.5em;
 }
 /*alphabet color for dark part*/
-
+#section3 .jumbohead {
+  color: #eee;
+}
 .flag{
   color: #444;
+}
+.desc {
+  color: #eee;
 }
 /*index section*/
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register 1: Profile</title>
+    <title>Student Registration</title>
     <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,8 +101,8 @@
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
       </div>
-        <hr class="hrr" color=#fff >
-        <button type="submit" name="btn-submit">Submit</button>
+      <hr class="hrr" color=#fff >
+      <button type="submit" name="btn-submit">Submit</button>
     </form>
   <script src="js/regis_stu.js"></script>
 </body>
