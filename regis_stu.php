@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register 1: Profile</title>
+    <title>Student Registration</title>
     <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,8 +28,8 @@
         ชื่อ <input type="text" name="sname" required width="50">
         นามสกุล <input type="text" name="ssurname" required>
         ชื่อเล่น <input type="text" name="nickname" required>
-        วัน/เดือน/ปี เกิด <input type="date" name="birth" required>
-        เลขประจำตัวประชาชน <input type="text" name="nationid" id="nationid" required>
+        วันเกิด <input type="date" name="birth" required>
+        เลขประจำตัวประชาชน <input type="text" name="nationid" id="nationid" maxlength="13" required>
         ศาสนา
         <select name="region" required>
             <option value="พุทธ">พุทธ</option>
@@ -42,7 +42,7 @@
             <textarea class="textinput" rows="10" cols="60" name="address" required></textarea><br>
         </div>
         <hr class="hrr" color=#fff >
-        เบอร์โทรศัพท์ <input type="tel" name="stel" id="stel" required><br>
+        เบอร์โทรศัพท์ <input type="tel" name="stel" id="stel" maxlength="10" required><br>
         E-mail <input type="email" name="email"><br>
         Facebook <input type="text" name="facebook"><br>
         ระดับชั้น
@@ -101,8 +101,8 @@
             <textarea class="textinput" name="ans1" rows="10" cols="60" name="address" required></textarea><br>
         </div>
       </div>
-        <hr class="hrr" color=#fff >
-        <button type="submit" name="btn-submit">Submit</button>
+      <hr class="hrr" color=#fff >
+      <button type="submit" name="btn-submit">Submit</button>
     </form>
   <script src="js/regis_stu.js"></script>
 </body>

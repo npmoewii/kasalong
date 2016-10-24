@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Staff: Register</title>
+  <title>Staff Registration</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -17,7 +17,7 @@
     </nav>
     <div class="navbar"></div>
     <form action="php/add_staff.php" method="post" enctype="multipart/form-data">
-        <p id="head">staff register</p>
+        <p id="head">staff registration</p>
         <!--<img alt="profile picture" src=""><br/> -->
         รูปถ่าย<input type="file" name="img_prof" accept=".jpg" required id="pic">
         ชื่อ<input type="text" name="name" placeholder="ชื่อ">
@@ -62,8 +62,8 @@
             <option value="false">ยังไม่จ่าย</option>
         </select>
         เบอร์โทรศัพท์<input type="text" name="phone" placeholder="เบอร์โทรศัพท์">
-        Line<input type="text" name="lineid" placeholder="Line">
-        Facebook<input type="text" name="facebook" placeholder="facebook"><br/>
+        Line<input type="text" name="lineid" placeholder="Line ID">
+        Facebook<input type="text" name="facebook" placeholder="Facebook"><br/>
         <button type="submit" name="btn-submit">Submit</button>
     </form>
     <footer>KASALONG CAMP</footer>

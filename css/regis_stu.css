@@ -11,8 +11,14 @@
   position: relative;
   font-weight: normal;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
+}
+.head:hover {
+  color: #000;
+  background-color: #eee;
 }
 form {
   background-color: #FFF;
@@ -21,7 +27,7 @@ form {
   border-radius: 3px;
   margin: 125px auto;
   position: relative;
-  padding: 5%;
+  padding: 3%;
   box-sizing: border-box;
   text-align: left;
   margin-bottom: 230px;
@@ -33,7 +39,7 @@ input, textarea, select{
   box-sizing: border-box;
   color: #444;
   font-size: 13px;
-  margin: 20px auto;
+  margin: 10px 0px 20px 0px;
   clear: none;
 }
 input[type=text], input[type=email], input[type=tel], input[type=file], input[type=date], select {
@@ -50,7 +56,7 @@ button {
   font-size: 20px;
   display: block;
   margin: 18px auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #pic {
   color: #aaa;
@@ -71,8 +77,8 @@ button {
   color #333 ;
 }
 .hrr{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .error {
   border-color: #f00;

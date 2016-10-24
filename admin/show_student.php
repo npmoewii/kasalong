@@ -22,7 +22,6 @@ $num_studata = $studata->num_rows;
   <section>
     <div class="main">
       <h2>Show student information / Check student</h2>
-      <p>อัพเดตทุกวินาที / อัพเดตเฉพาะข้อมูลจาก database / Database จะแสดงเหนือคำว่า "ตัวอย่าง"</p>
       <table border="0" cellspacing="0" cellpadding="0">
         <tr>
           <th>ชื่อ-นามสกุล</th>
@@ -52,64 +51,6 @@ $num_studata = $studata->num_rows;
             <td align="right"><a class="btncheck" href="check_stu1.php?id=<?php echo $row_studata['nationid']; ?>">Check</a></td>
           </tr>
         <?php } ?>
-        <tr>
-          <td colspan="4"><span style="text-decoration: underline;">ตัวอย่าง</span></td>
-        <tr>
-          <td>นาย สมศักดิ์ รักเรียน</td>
-          <td align="center">ศักดิ์</td>
-          <td align="center">ม.4</td>
-          <td><div class="tst tred">ไม่ผ่าน</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นส. สมศรี หนีเรียน</td>
-          <td align="center">ศรี</td>
-          <td align="center">ม.6</td>
-          <td><div class="tst tgreen">ผ่าน</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นาย สมชาย ไม่เรียน</td>
-          <td align="center">ชาย</td>
-          <td align="center">ม.5</td>
-          <td><div class="tst tgreen">ผ่าน</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นาย สมโภชณ์ โดดเรียน</td>
-          <td align="center">โภช</td>
-          <td align="center">ม.5</td>
-          <td><div class="tst tred">ไม่ผ่าน</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นาย สมหญิง วิ่งเรียน</td>
-          <td align="center">หญิง</td>
-          <td align="center">ม.4</td>
-          <td><div class="tst tgreen">ผ่าน</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นส. สมทรง คงเรียน</td>
-          <td align="center">ทรง</td>
-          <td align="center">ม.5</td>
-          <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นาย สมปอง ลองเรียน</td>
-          <td align="center">ปอง</td>
-          <td align="center">ม.4</td>
-          <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
-        <tr>
-          <td>นาย สมหมาย ใฝ่เรียน</td>
-          <td align="center">หมาย</td>
-          <td align="center">ม.4</td>
-          <td><div class="tst tblue">ยังไม่ตรวจสอบ</div></td>
-          <td align="right"><a class="btncheck" href="#">Check</a></td>
-        </tr>
       </table>
       จำนวนนักเรียนทั้งหมด <?php echo $num_studata; ?> คน
     </div>

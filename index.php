@@ -28,20 +28,20 @@
   </nav>
   <section id="section1">
     <div class="main">
-      <div class="topic">Kasalong Camp</div>
+      <div class="topic">Kasalong Camp<div class="headinfotxt">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย ครั้งที่</div></div>
       <div class="jumbopadding">
         <a href="regis_stu.php">Register for Student</a>
         <a id="staff" href="regis_staff.php">Register for Staff</a>
       </div>
     </div>
   </section>
-  
+
   <section id="section2" id="pattern" class="pattern">
   <br>
-  <ul class="grid">
+  <ul class="grid" style="list-style-type: none">
       <li class="wide">
         <div>
-          
+
             <div class="headinfotxt"  align="center" valign="bottom">รายละเอียดค่าย</div>
           <p>น้องๆอยากทราบไหมว่า พวกพี่ๆวิศวคอมพิวเตอร์เนี่ย วันๆเขาทำอะไรกันบ้าง? เรียนอะไร? ยากง่ายแค่ไหน?</p>
           <p>ถ้าน้องๆเป็นคนหนึ่งที่มีคำถามแบบนี้อยู่ในใจ ขอแนะนำให้น้องๆเข้ามาสัมผัสประสบการณ์การเรียนวิศวกรรมคอมพิวเตอร์ของจริง ลงมือปฏิบัติจริง ได้ในค่ายคอมแคมป์ ครั้งที่ 27 ที่จะช่วยให้น้องๆได้ไขข้อสงสัย และเข้าใจในภาควิชาวิศวกรรมคอมพิวเตอร์มากขึ้น</p>
@@ -50,9 +50,9 @@
       </li>
       <li>
         <div>
-          
+
             <img src="img/pic.png"  width="500px">
-          
+
         </div>
       </li>
     </ul>
@@ -98,7 +98,7 @@
 </ul>
 <br>
   </section>
-  
+
   <section id="section4">
     <div class="jumbo">
       <div class="jumbohead">ถาม-ตอบ</div>
@@ -116,7 +116,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="section5">
     <div class="jumbo">
       <div class="jumbohead">ติดต่อสอบถาม</div>

@@ -1,5 +1,9 @@
 /*use for everypage*/
 /* Tags */
+@font-face{
+    font-family: 'supermarket';
+    src: url('supermarket.ttf');
+}
 body {
   font-family: "supermarket";
   margin: 0px;
@@ -54,7 +58,6 @@ nav {
 }
 .nav a {
   padding: 15px;
-  height: 20px;
   margin: 0px;
   color: #ccc;
   display: inline-block;
@@ -73,9 +76,11 @@ nav {
   float: right;
   border-radius: 5px;
   margin: 10px;
-  padding: 6px;
+  padding: 2px 6px 2px 6px;
+  font-size: 16px;
   cursor: pointer;
   display: none;
+  font-family: "supermarket";
 }
 .navbar button:hover {
   border-color: #fff;
@@ -89,7 +94,7 @@ nav {
 }
 
 /* Responsive */
-@media only screen and (max-width:980px) {
+@media only screen and (max-width:1000px) {
   .navbar {
     margin: 0px;
     width: 100%;
