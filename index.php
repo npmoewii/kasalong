@@ -51,9 +51,8 @@
       <li>
         <div>
 
-            <img src="img/pic.png"  width="150%">
-            <img src="img/pic.png"  width="150%">
-            <img src="img/pic.png"  width="150%">
+            <img src="img/pic.png"  width="500px">
+
         </div>
       </li>
     </ul>
@@ -79,7 +78,7 @@
 
     <!-- Item 2 -->
     <li>
-      <div class="direction-r">
+      <div class="direction-l">
         <div class="flag-wrapper">
           <span class="flag">10 ธันวาคม 2559</span>
         </div>

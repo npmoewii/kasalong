@@ -30,15 +30,6 @@ body{
     margin: 0px 10px 0px 10px;
   }
 }
-@media only screen and (max-width:700px){
-  /*request front go here*/
-.flag{
-  color: red;
-}
-.desc {
-  color: red;
-}
-}
 /*section1*/
 .main {
     text-align: center;
@@ -127,7 +118,7 @@ section {
 }
 .boxdes {
   margin-top: 70px;
-  margin-top: 20%;
+  m1argin-top: 20%;
   margin-left: 50px;
   margin-bottom: 20%;
   width: 50%;
