@@ -14,7 +14,6 @@
 			url: 'php/checkexist.php',
 			data: { tt: nid },
 			success: function(response) {
-				//alert(response);
 				if(response==2){
 					document.getElementById("indicator").innerHTML = "<img src='img/valid.png'><br/>ผ่าน";
 					$("#ups").fadeIn(1000);
@@ -54,7 +53,7 @@
         <form id="ff" action="php/upslip.php" method="post" enctype="multipart/form-data" onkeypress="return event.keyCode != 13;">
             <input type="text" id="nationid" onkeyup="myFunction()" autocomplete="off" name="nationid" required>
             <div id="indicator"></div>
-            <input id="ups" type="file" name="slipsub" accept="*.*" required>
+            <input id="ups" type="file" name="slipsub" accept="image/*" required>
             <button id="sub" type="submit" name="btn-submit">Submit</button>
          </form>
      </div>

@@ -37,6 +37,9 @@ $('#stel').change(function() {
   if (stel.length != 10) {
     $('#stel').addClass("error");
   }
+  else if (stel[0] != 0) {
+    $('#stel').addClass("error");
+  }
   else {
     $('#stel').removeClass("error");
   }
@@ -44,6 +47,9 @@ $('#stel').change(function() {
 $('#ptel').change(function() {
   var stel = $('#ptel').val();
   if (stel.length != 10) {
+    $('#ptel').addClass("error");
+  }
+  else if (stel[0] != 0) {
     $('#ptel').addClass("error");
   }
   else {

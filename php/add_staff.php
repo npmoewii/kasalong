@@ -12,41 +12,50 @@ if(isset($_POST['btn-submit'])){
             $imgdir = "../img/staff_profile/";
             $arrs = explode(".",$_FILES['img_prof']['name']);
             $imgtype = $arrs[count($arrs)-1];
+            $type = $_FILES['img_prof']['type'];
             $imgname = "prof_".$_POST['idstu'].".".$imgtype;
 
             if (!file_exists("../img/staff_profile")) {
               mkdir("../img/staff_profile", 0766);
             }
-            if($imgtype=="jpg"||$imgtype=="jpeg"){
-                if(move_uploaded_file($_FILES['img_prof']['tmp_name'],$imgdir.$imgname)){
-                    echo "File has been uploaded.";
-                    $sql = "insert into info_staff (staffname,staffsurname,nickname,idstu,faculty,years,img_prof,livechr,goself,paid,size,phone,lineid,facebook) values ('".
-                    $_POST['name']."','".
-                    $_POST['surname']."','".
-                    $_POST['nickname']."','".
-                    $_POST['idstu']."','".
-                    $_POST['faculty']."','".
-                    $_POST['years']."','".
-                    $imgdir.$imgname."','".
-                    $_POST['livechr']."','".
-                    $_POST['goself']."','".
-                    $_POST['paid']."','".
-                    $_POST['size']."','".
-                    $_POST['phone']."','".
-                    $_POST['lineid']."','".
-                    $_POST['facebook']
-                    ."')";
-                    if($conn->query($sql)){
-                        $res = "การสมัครเสร็จสมบูรณ์แล้วค่ะ :)";
-                    }
-                    else{
-                        unlink("img/profile/".$imgname);
-                        $res = "Registation Failed: ".$conn->error;
-                    }
-                }
-                else{   //Upload img_prof failed
-                    $res = "Registation Failed: Upload image profile failed.".$_FILES['img_prof']['name'];
-                }
+            if ($_FILES['img_prof']['size'] > 1048576) {
+              $res = "Registation Failed: ไฟล์มีขนาดใหญ่เกินไป";
+            }
+            else {
+              if(strpos($type, "image/") !== false){
+                  if(move_uploaded_file($_FILES['img_prof']['tmp_name'],$imgdir.$imgname)){
+                      echo "File has been uploaded.";
+                      $sql = "insert into info_staff (staffname,staffsurname,nickname,idstu,faculty,years,img_prof,livechr,goself,paid,size,phone,lineid,facebook) values ('".
+                      $_POST['name']."','".
+                      $_POST['surname']."','".
+                      $_POST['nickname']."','".
+                      $_POST['idstu']."','".
+                      $_POST['faculty']."','".
+                      $_POST['years']."','".
+                      $imgdir.$imgname."','".
+                      $_POST['livechr']."','".
+                      $_POST['goself']."','".
+                      $_POST['paid']."','".
+                      $_POST['size']."','".
+                      $_POST['phone']."','".
+                      $_POST['lineid']."','".
+                      $_POST['facebook']
+                      ."')";
+                      if($conn->query($sql)){
+                          $res = "การสมัครเสร็จสมบูรณ์แล้วค่ะ :)";
+                      }
+                      else{
+                          unlink("img/profile/".$imgname);
+                          $res = "Registation Failed: ".$conn->error;
+                      }
+                  }
+                  else{   //Upload img_prof failed
+                      $res = "Registation Failed: Upload image profile failed.".$_FILES['img_prof']['name'];
+                  }
+              }
+              else {
+                $res = "Registation Failed: ไม่ใช่ไฟล์รูปภาพ";
+              }
             }
         }
     }

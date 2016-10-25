@@ -47,6 +47,10 @@ input, textarea, select{
   margin: 10px 0px 20px 0px;
   clear: none;
 }
+input[type=checkbox], input[type=radio] {
+  margin-left: 10px;
+  margin-right: 0px;
+}
 input[type=text], input[type=email], input[type=tel], input[type=file], input[type=date], select {
   width: 100%;
   display: block;
