@@ -1,3 +1,6 @@
+<?php
+include("php/mainfunction.php");
+?>
 <!DOCTYPE html>
 <html>
 <script>
@@ -49,14 +52,18 @@
 	</nav>
 	<div id="container">
     <div id="conte">
-    <div id="hea">กรอกเลขประจำตัวประชาชนเพื่อดูประกาศผลและยืนยันสลิป</div>
-        <form id="ff" action="php/upslip.php" method="post" enctype="multipart/form-data" onkeypress="return event.keyCode != 13;">
-            <input type="text" id="nationid" onkeyup="myFunction()" autocomplete="off" name="nationid" required>
-            <div id="indicator"></div>
-            <input id="ups" type="file" name="slipsub" accept="image/*" required>
-            <button id="sub" type="submit" name="btn-submit">Submit</button>
-         </form>
-     </div>
-     </div>
+			<?php if (checkstate("announce")) { ?>
+    	<div id="hea">กรอกเลขประจำตัวประชาชนเพื่อดูประกาศผลและยืนยันสลิป</div>
+      <form id="ff" action="php/upslip.php" method="post" enctype="multipart/form-data" onkeypress="return event.keyCode != 13;">
+        <input type="text" id="nationid" onkeyup="myFunction()" autocomplete="off" name="nationid" required>
+        <div id="indicator"></div>
+        <input id="ups" type="file" name="slipsub" accept="image/*" required>
+        <button id="sub" type="submit" name="btn-submit">Submit</button>
+      </form>
+			<?php } else { ?>
+			<div id="hea">ยังไม่ประกาศผล</div>
+			<?php } ?>
+    </div>
+  </div>
 </body>
 </html>
