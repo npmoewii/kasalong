@@ -16,7 +16,7 @@ if(isset($_POST['btn-submit'])){
   }
 	if(move_uploaded_file($_FILES['slipsub']['tmp_name'],$imgdir.$imgname)){
 		if ($count == 0)
-			$sql = "INSERT into slip VALUES ('$nid','$imgname',false)";
+			$sql = "INSERT into slip VALUES ('$nid','$imgname',0)";
 		else
 			$sql = "UPDATE slip SET img_slip = '$imgname' WHERE nationid = '$nid'";
 

@@ -1,3 +1,6 @@
+<?php
+include("php/mainfunction.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,8 +33,14 @@
     <div class="main">
       <div class="topic">Kasalong Camp<div class="headinfotxt">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย ครั้งที่</div></div>
       <div class="jumbopadding">
+        <?php if (checkstate("register")) { ?>
         <a href="regis_stu.php">Register for Student</a>
         <a id="staff" href="regis_staff.php">Register for Staff</a>
+        <?php } elseif (checkstate("announce")) { ?>
+        <a href="slippage.php">ดูประกาศผล</a>
+        <?php } else { ?>
+        <a href="#">ขออภัย ขณะนี้ไม่อยู่ในช่วงเปิดรับสมัคร</a>
+        <?php } ?>
       </div>
     </div>
   </section>

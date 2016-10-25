@@ -66,9 +66,7 @@ $num_pstudata = $pstudata->num_rows;
             ?>
           </td>
           <td align="right">
-            <?php if ($sent) { ?>
-            <a class="btncheck" href="check_slip.php?id=<?php echo $row['nationid']; ?>">Check</a>
-            <?php } else { echo "&nbsp;"; } ?>
+            <a class="btncheck<?php if (!$sent) { echo " hidden"; } ?>" href="check_slip.php?id=<?php echo $row['nationid']; ?>">Check</a>
           </td>
         </tr>
         <?php } ?>

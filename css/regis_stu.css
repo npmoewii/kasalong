@@ -20,7 +20,7 @@
   color: #faa;
   background-color: #fff;
 }
-form {
+.section {
   background-color: #FFF;
   width: 60%;
   min-width: 400px;
@@ -94,4 +94,3 @@ button {
   outline-color: transparent;
   color: transparent;
 }
-

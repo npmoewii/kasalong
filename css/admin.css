@@ -31,6 +31,9 @@ section {
 img {
   border-width: 0px;
 }
+input {
+  margin: 2px 0px 2px 0px;
+}
 .header {
   width: 980px;
   margin: auto;

@@ -15,13 +15,18 @@
 			data: { tt: nid },
 			success: function(response) {
 				//alert(response);
-				if(response==true){
-					document.getElementById("indicator").innerHTML = "<img src='img/valid.png'><br/>ผา่น";
+				if(response==2){
+					document.getElementById("indicator").innerHTML = "<img src='img/valid.png'><br/>ผ่าน";
 					$("#ups").fadeIn(1000);
 					$("#sub").fadeIn(1000);
 				}
-				else{
+				else if (response == 1){
 					document.getElementById("indicator").innerHTML = "<img src='img/invalid.png'><br/>ไม่ผ่าน";
+					$("#ups").fadeOut(1000);
+					$("#sub").fadeOut(1000);
+				}
+				else {
+					document.getElementById("indicator").innerHTML = "<img src='img/invalid.png'><br/>ไม่พบข้อมูลในระบบ";
 					$("#ups").fadeOut(1000);
 					$("#sub").fadeOut(1000);
 				}
@@ -30,16 +35,22 @@
 	}
 </script>
 <head>
-    <title>ส่งสลิป</title>
+    <title>ประกาศผล</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/slip.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
+	<nav>
+			<div class="navbar">
+				<div class="heading">
+					<div class="title"><a href="index.php">KASALONG</a></div>
+				</div>
+	</nav>
 	<div id="container">
     <div id="conte">
-    <div id="hea">ใส่รหัสบัตรประชาชนเพื่อยืนยันสลิป</div>
+    <div id="hea">กรอกเลขประจำตัวประชาชนเพื่อดูประกาศผลและยืนยันสลิป</div>
         <form id="ff" action="php/upslip.php" method="post" enctype="multipart/form-data" onkeypress="return event.keyCode != 13;">
             <input type="text" id="nationid" onkeyup="myFunction()" autocomplete="off" name="nationid" required>
             <div id="indicator"></div>
