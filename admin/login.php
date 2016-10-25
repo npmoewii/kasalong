@@ -4,8 +4,11 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
   if (isset($_SESSION['admin'])) {
     unset($_SESSION['admin']);
   }
-  $pwd = addslashes($_POST['pwd']);
-  if ($pwd == "kasashort") {
+  include("../php/connect.php");
+  $pwd = $_POST['pwd'];
+  $login = $conn->query("SELECT * FROM `state` WHERE `name` = 'adminpw';");
+  $data_login = $login->fetch_array();
+  if ($pwd == $data_login['content']) {
     $_SESSION['admin'] ="pen_pineapple_apple_pen";
     header("Location: aviewall.php");
   }
@@ -49,7 +52,6 @@ if (isset($_POST['request']) && ($_POST['request'] == "admin-login")) {
         <input type="hidden" name="request" value="admin-login">
         <input type="submit" name="btnSubmit" value="Login">
       </form>
-      (ทดสอบ ใช้ "kasashort")<br>
       <?php if (isset($msg)) { echo $msg; } ?>
     </div>
   </section>

@@ -48,7 +48,7 @@ else {
       <h2>Check student</h2>
       <div id="card">
         <div id="left">
-          <a href="<?php echo $data['img_prof']; ?>">
+          <a href="<?php echo $data['img_prof']; ?>" target="_blank">
             <img class="profimg" src="<?php echo $data['img_prof']; ?>" alt="" />
           </a>
           <div id="statusnow" class="tstlarge <?php echo $class_status; ?>"><?php echo $text_status; ?></div>
@@ -61,6 +61,7 @@ else {
           <p>วันเกิด: <?php echo convdate($data['birth']); ?></p>
           <p>ศาสนา: <?php echo $data['religion']; ?></p>
           <p>ที่อยู่: <?php echo $data['address']; ?></p>
+          <p>เบอร์โทรศัพท์: <?php echo $data['phone']; ?></p>
           <p>อีเมล: <?php echo $data['email']; ?></p>
           <p>Facebook: <?php echo $data['facebook']; ?></p>
           <p>ชั้น: ม.<?php echo $data['clas']; ?></p>

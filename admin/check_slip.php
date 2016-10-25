@@ -51,7 +51,7 @@ else {
         <?php echo $data_stu['title'].$data_stu['sname']." ".$data_stu['ssurname']." (".$data_stu['nickname'].")"; ?>
       </h3>
       <p align="center">
-        <a href="<?php echo $data_slip['img_slip']; ?>">
+        <a href="../img/slips/<?php echo $data_slip['img_slip']; ?>" target="_blank">
           <img class="slipimg" src="../img/slips/<?php echo $data_slip['img_slip']; ?>" alt="" />
         </a>
       </p>

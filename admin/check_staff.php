@@ -34,7 +34,7 @@ else {
       <h2>Show Staff Information</h2>
       <div id="card">
         <div id="left">
-          <a href="<?php echo $data['img_prof']; ?>">
+          <a href="<?php echo $data['img_prof']; ?>" target="_blank">
             <img class="profimg" src="<?php echo $data['img_prof']; ?>" alt="" />
           </a>
         </div>

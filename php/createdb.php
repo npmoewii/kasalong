@@ -78,12 +78,14 @@ CREATE TABLE IF NOT EXISTS `state`
 (
     `name` VARCHAR(20) NOT NULL PRIMARY KEY,
     `content_type` VARCHAR(10) NOT NULL,
-    `content` VARCHAR(20) NOT NULL
+    `content` VARCHAR(30) NOT NULL
 )
 ","
 INSERT INTO `state` (`name`, `content_type`, `content`) VALUES ('register', 'auto', 'between 2016-11-01 2016-11-30');
 ","
 INSERT INTO `state` (`name`, `content_type`, `content`) VALUES ('announce', 'auto', 'after 2016-12-10');
+","
+INSERT INTO `state` (`name`, `content_type`, `content`) VALUES ('adminpw', 'manual', 'kasashort');
 ");
             foreach($str as $sql){
                 if(!$conn->query($sql)){
