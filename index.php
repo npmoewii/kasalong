@@ -144,7 +144,7 @@ include("php/mainfunction.php");
           พี่ตั้ม 0584894484<br>
           <br>
           <h3>อีเมลล์</h3>
-          dfdsggs@fgsg.com
+          kasalong.cr@gmail.com
         </div>
       </ul>
     </div>
