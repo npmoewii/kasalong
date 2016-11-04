@@ -30,7 +30,7 @@ include("php/mainfunction.php");
   </nav>
   <section id="section1">
     <div class="main">
-      <div class="topic">Kasalong Camp<div class="headinfotxt">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย ครั้งที่</div></div>
+      <div class="topic">Kasalong Camp<div class="headinfotxt">ค่ายกาสะลองสีชมพู สานความรู้สู่เจียงฮาย ครั้งที่ 16</div></div>
       <div class="jumbopadding">
         <?php if (checkstate("register")) { ?>
         <a href="regis_stu.php">Register for Student</a>
